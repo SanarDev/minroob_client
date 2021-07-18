@@ -1,0 +1,447 @@
+﻿<local:BaseWindow
+    x:Class="Dooz.HomeWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converter1="clr-namespace:Dooz.converters"
+    xmlns:converterx="clr-namespace:Dooz.converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Dooz"
+    xmlns:src="clr-namespace:Dooz"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="HomeWindow"
+    Width="1000"
+    Height="450"
+    TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+    mc:Ignorable="d">
+
+    <Window.Resources>
+        <!--  A Style that affects all TextBlocks  -->
+        <ResourceDictionary>
+            <converterx:ColorConverter x:Key="ColorConverter" />
+            <converterx:TimestampConverter x:Key="TimestampConverter" />
+            <Style x:Key="RactStyle" TargetType="Rectangle">
+                <Setter Property="StrokeThickness" Value="0.3" />
+                <Setter Property="Stroke" Value="#DEDEDE" />
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1.5*" />
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Grid.Column="0" Style="{StaticResource RactStyle}" />
+            <Rectangle Grid.Column="1" Style="{StaticResource RactStyle}" />
+            <Rectangle Grid.Column="2" Style="{StaticResource RactStyle}" />
+            <Rectangle Grid.Column="3" Style="{StaticResource RactStyle}" />
+
+            <Grid Grid.Column="0" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock FontSize="16" Text="Your Account" />
+                <Grid Grid.Row="1" Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Margin="0 10 0 0" FontWeight="DemiBold" Text="Username:" Grid.Column="0"/>
+                    <TextBlock Margin="0 10 0 0" x:Name="TxtUsername" Text="Username:" Grid.Column="1"/>
+                    <TextBlock Margin="0 10 0 0" FontWeight="DemiBold" Text="FullName: " Grid.Column="0" Grid.Row="1"/>
+                    <TextBlock Margin="0 10 0 0" x:Name="TxtFullname" Grid.Column="1" Grid.Row="1"/>
+                    <TextBlock Margin="0 10 0 0" FontWeight="DemiBold" Text="Total Games: " Grid.Column="0" Grid.Row="2"/>
+                    <TextBlock Margin="0 10 0 0" x:Name="TxtNumberOfGamePlayed" Grid.Column="1" Grid.Row="2"/>
+                    <TextBlock Margin="0 10 0 0" FontWeight="DemiBold" Text="Wins: " Grid.Column="0" Grid.Row="3"/>
+                    <TextBlock Margin="0 10 0 0" x:Name="TxtWinsCount" Grid.Column="1" Grid.Row="3"/>
+                </Grid>
+                <Button VerticalAlignment="Bottom" x:Name="BtnLogOut" Click="BtnLogOut_Click" Grid.Row="1" Content="Log out"/>
+            </Grid>
+
+            <Grid Grid.Column="1" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock FontSize="16" Text="Game Requests" />
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Incoming" />
+                    <ListView x:Name="InComingGameRequestsList" Grid.Row="1">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*" />
+                                            <ColumnDefinition Width="1*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock
+                                            Margin="5,8"
+                                            FontSize="15"
+                                            Foreground="{Binding Converter={StaticResource ColorConverter}}"
+                                            Text="{Binding Fullname}" />
+
+                                        <Grid Grid.Column="1" HorizontalAlignment="Right">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="30" />
+                                                <ColumnDefinition Width="30" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Button
+                                                Grid.Column="0"
+                                                Padding="0"
+                                                Click="BtnCancelRequest_Click"
+                                                Content="{materialDesign:PackIcon Cancel}"
+                                                Style="{DynamicResource MaterialDesignToolButton}"
+                                                Tag="{Binding Id}"
+                                                ToolTip="Denied Game Request" />
+
+                                            <Button
+                                                Name="BtnAcceptGame"
+                                                Grid.Column="1"
+                                                Padding="0"
+                                                Click="BtnAcceptGame_Click"
+                                                Content="{materialDesign:PackIcon CheckCircle}"
+                                                Style="{DynamicResource MaterialDesignToolButton}"
+                                                Tag="{Binding Id}"
+                                                ToolTip="Accept Game Request" />
+                                        </Grid>
+                                    </Grid>
+
+                                    <Rectangle
+                                        Grid.Row="2"
+                                        Height="0.8"
+                                        HorizontalAlignment="Stretch"
+                                        Fill="#ECECEC" />
+                                </Grid>
+
+                            </DataTemplate>
+
+                        </ListView.ItemTemplate>
+
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                    </ListView>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Outgoing" />
+                    <ListView x:Name="OutGoingGameRequestsList" Grid.Row="1">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*" />
+                                            <ColumnDefinition Width="1*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock
+                                            Margin="5,8"
+                                            FontSize="15"
+                                            Foreground="{Binding Converter={StaticResource ColorConverter}}"
+                                            Text="{Binding Fullname}" />
+
+                                        <Grid Grid.Column="1" HorizontalAlignment="Right">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="30" />
+                                            </Grid.ColumnDefinitions>
+                                            <Button
+                                                Name="BtnCancelRequest"
+                                                Grid.Column="0"
+                                                Padding="0"
+                                                Click="BtnCancelRequest_Click"
+                                                Content="{materialDesign:PackIcon Cancel}"
+                                                Style="{DynamicResource MaterialDesignToolButton}"
+                                                Tag="{Binding Id}"
+                                                ToolTip="Cancel Game Request" />
+                                        </Grid>
+                                    </Grid>
+
+                                    <Rectangle
+                                        Grid.Row="2"
+                                        Height="0.8"
+                                        HorizontalAlignment="Stretch"
+                                        Fill="#ECECEC" />
+                                </Grid>
+
+                            </DataTemplate>
+
+                        </ListView.ItemTemplate>
+
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                    </ListView>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Column="2" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <TextBlock
+                    Grid.Row="0"
+                    FontSize="16"
+                    Text="Online Players" />
+
+                <ListView
+                    x:Name="OnlinePlayerList"
+                    Grid.Row="1"
+                    ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="1*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock
+                                        Margin="5,8"
+                                        FontSize="15"
+                                        Foreground="{Binding Converter={StaticResource ColorConverter}}"
+                                        Text="{Binding Fullname}" />
+
+                                    <Grid Grid.Column="1" HorizontalAlignment="Right">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="30" />
+                                            <ColumnDefinition Width="30" />
+                                        </Grid.ColumnDefinitions>
+                                        <Button
+                                            Name="BtnSendMessage"
+                                            Grid.Column="0"
+                                            Padding="0"
+                                            Click="BtnSendMessage_Click"
+                                            Content="{materialDesign:PackIcon MessageText}"
+                                            Style="{DynamicResource MaterialDesignToolButton}"
+                                            Tag="{Binding Id}"
+                                            ToolTip="Send Message" />
+
+                                        <Button
+                                            Name="BtnRequest"
+                                            Grid.Column="1"
+                                            Padding="0"
+                                            Click="BtnSendGameRequest_Click"
+                                            Content="{materialDesign:PackIcon GoogleController}"
+                                            Style="{DynamicResource MaterialDesignToolButton}"
+                                            Tag="{Binding Id}"
+                                            ToolTip="Send Game Request" />
+                                    </Grid>
+                                </Grid>
+
+                                <Rectangle
+                                    Grid.Row="2"
+                                    Height="0.8"
+                                    HorizontalAlignment="Stretch"
+                                    Fill="#ECECEC" />
+                            </Grid>
+
+                        </DataTemplate>
+
+                    </ListView.ItemTemplate>
+
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+
+                </ListView>
+
+            </Grid>
+            <Grid Grid.Column="3" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <TextBlock
+                    Grid.Row="0"
+                    FontSize="16"
+                    Text="Global Chat" />
+                <ListView
+                    x:Name="GlobalChatList"
+                    Grid.Row="1"
+                    ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <TextBlock
+                                    Margin="10,2"
+                                    FontSize="12"
+                                    FontWeight="Bold"
+                                    Foreground="{Binding Converter={StaticResource ColorConverter}}"
+                                    Text="{Binding Fullname}" />
+                                <TextBlock
+                                    Grid.Row="1"
+                                    Margin="10,1"
+                                    FontSize="12"
+                                    Text="{Binding Message}"
+                                    TextWrapping="Wrap" />
+                                <TextBlock
+                                    Grid.Row="2"
+                                    Margin="10,1"
+                                    HorizontalAlignment="Right"
+                                    FontSize="12"
+                                    Text="{Binding Timestamp, Converter={StaticResource TimestampConverter}}" />
+                                <Rectangle
+                                    Grid.Row="3"
+                                    Height="0.8"
+                                    HorizontalAlignment="Stretch"
+                                    Fill="#ECECEC" />
+                            </Grid>
+
+                        </DataTemplate>
+
+                    </ListView.ItemTemplate>
+
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+
+                </ListView>
+
+                <Grid
+                    Grid.Row="2"
+                    Height="40"
+                    Margin="5"
+                    VerticalAlignment="Bottom">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="80" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox
+                        x:Name="MessageBox"
+                        Grid.Column="0"
+                        materialDesign:HintAssist.Hint="Write a message"
+                        materialDesign:HintAssist.IsFloating="True" />
+                    <Button
+                        Grid.Column="1"
+                        Margin="10,0,0,-10"
+                        Click="SendMessage"
+                        Content="Send"
+                        IsDefault="True"
+                        Style="{DynamicResource MaterialDesignFlatButton}" />
+                </Grid>
+            </Grid>
+        </Grid>
+
+        <materialDesign:DialogHost
+            IsOpen="{Binding IsShowWaitingDialog}">
+            <materialDesign:DialogHost.DialogContent>
+                <Grid Margin="40 15 40 15"  Height="200">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Waiting For Start Game ..." HorizontalAlignment="Center" FontWeight="DemiBold"/>
+                    <Grid Grid.Row="1" VerticalAlignment="Center" Margin="0 0 0 10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock x:Name="TxtWaitingDialog" FontSize="15" HorizontalAlignment="Center" FontWeight="DemiBold"/>
+
+                    </Grid>
+                    <Button x:Name="BtnCancelWaitingDialog" Grid.Row="2" Content="Cancel" Click="CancelWaitingDialog_Click" Style="{DynamicResource MaterialDesignFlatButton}" VerticalAlignment="Bottom"/>
+                </Grid>
+            </materialDesign:DialogHost.DialogContent>
+            <!--  put the content over which the dialog is shown here (e.g. your main window grid)  -->
+        </materialDesign:DialogHost>
+
+        <materialDesign:DialogHost
+            IsOpen="{Binding IsShowResumeGameDialog}">
+            <materialDesign:DialogHost.DialogContent>
+                <Grid Margin="30 15 30 15"  MinHeight="200">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Resume Game" HorizontalAlignment="Center" FontSize="16" FontWeight="DemiBold"/>
+                    <Grid Grid.Row="1" VerticalAlignment="Center" Margin="0 0 0 10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock x:Name="TxtResumeGameDialog" Text="You have a game with Mibina Doroki . Do you want to resume it?" TextWrapping="Wrap" MaxWidth="250" FontSize="14" HorizontalAlignment="Center" FontWeight="DemiBold"/>
+
+                    </Grid>
+                    <Button x:Name="BtnCancelResumeGame" Grid.Row="2" Content="Cancel" Click="CancelResumeGame_Click" Style="{DynamicResource MaterialDesignFlatButton}" VerticalAlignment="Bottom"/>
+                    <Button x:Name="BtnAcceptResumeGame" Grid.Row="3" Content="Resume" Click="AcceptResumeGame_Click" Style="{DynamicResource MaterialDesignRaisedButton}" VerticalAlignment="Bottom"/>
+                </Grid>
+            </materialDesign:DialogHost.DialogContent>
+            <!--  put the content over which the dialog is shown here (e.g. your main window grid)  -->
+        </materialDesign:DialogHost>
+
+        <materialDesign:Snackbar
+            Grid.Column="2"
+            Margin="0"
+            Padding="0"
+            VerticalAlignment="Bottom"
+            IsActive="{Binding IsActiveSnackBar}">
+            <materialDesign:SnackbarMessage Content="{Binding SnackbarMessage}" />
+        </materialDesign:Snackbar>
+    </Grid>
+</local:BaseWindow>

@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40F3E8A9-45BD-485F-98B7-E14CE95A9F29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Dooz</RootNamespace>
+    <AssemblyName>Minroob</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hnet.com-image.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialDesignColors, Version=2.0.0.2422, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.2.0.0\lib\net452\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=4.0.0.2422, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.4.0.0\lib\net452\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BaseWindow.cs" />
+    <Compile Include="converters\ColorConverter.cs" />
+    <Compile Include="converters\MessageOwnerConverter.cs" />
+    <Compile Include="converters\TimestampConverter.cs" />
+    <Compile Include="HomeWindow.xaml.cs">
+      <DependentUpon>HomeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrivateChatWindow.xaml.cs">
+      <DependentUpon>PrivateChatWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Signin.xaml.cs">
+      <DependentUpon>Signin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpWinow.xaml.cs">
+      <DependentUpon>SignUpWinow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="socket\errors\ErrorSignUp.cs" />
+    <Compile Include="socket\errors\FailAuth.cs" />
+    <Compile Include="socket\models\GameData.cs" />
+    <Compile Include="socket\models\GameEnd.cs" />
+    <Compile Include="socket\models\GameMessage.cs" />
+    <Compile Include="socket\models\GamePlayer.cs" />
+    <Compile Include="socket\models\GlobalMessage.cs" />
+    <Compile Include="socket\models\GlobalMessagesData.cs" />
+    <Compile Include="socket\models\InComingGameRequest.cs" />
+    <Compile Include="socket\models\INotifyProperty.cs" />
+    <Compile Include="socket\models\LoggedUser.cs" />
+    <Compile Include="socket\models\Me.cs" />
+    <Compile Include="socket\models\PrivateChatMessage.cs" />
+    <Compile Include="socket\models\OutGoingGameRequest.cs" />
+    <Compile Include="socket\models\Player.cs" />
+    <Compile Include="socket\models\PlayerStatus.cs" />
+    <Compile Include="socket\models\PrivateChat.cs" />
+    <Compile Include="socket\models\ResumeGame.cs" />
+    <Compile Include="socket\models\StartGame.cs" />
+    <Compile Include="socket\models\WaitingForPlayerToStartGame.cs" />
+    <Compile Include="socket\requests\AcceptGameRequest.cs" />
+    <Compile Include="socket\requests\AddMessageInPrivateChatRequest.cs" />
+    <Compile Include="socket\requests\AnnouncementOfLossGameRequest.cs" />
+    <Compile Include="socket\requests\CancelGameRequest.cs" />
+    <Compile Include="socket\requests\CancelWaitingForPlayerRequest.cs" />
+    <Compile Include="socket\requests\CreateAccountRequest.cs" />
+    <Compile Include="socket\requests\GameRequest.cs" />
+    <Compile Include="socket\requests\GetGameDataRequest.cs" />
+    <Compile Include="socket\requests\GetGameRequests.cs" />
+    <Compile Include="socket\requests\GetGlobalMessages.cs" />
+    <Compile Include="socket\requests\GetMeRequest.cs" />
+    <Compile Include="socket\requests\GetOnlinePlayersRequest.cs" />
+    <Compile Include="socket\requests\GetPrivateChatRequest.cs" />
+    <Compile Include="socket\requests\GetRunningGameRequest.cs" />
+    <Compile Include="socket\requests\GlobalMessageRequest.cs" />
+    <Compile Include="socket\requests\LoginRequest.cs" />
+    <Compile Include="socket\requests\LoginWithTokenRequest.cs" />
+    <Compile Include="socket\requests\MinRoobKeyboardClickRequest.cs" />
+    <Compile Include="socket\SocketController.cs" />
+    <Compile Include="socket\SocketDataType.cs" />
+    <Compile Include="socket\SocketErrorType.cs" />
+    <Compile Include="socket\SocketMessage.cs" />
+    <Compile Include="utils\DateTimeHelper.cs" />
+    <Compile Include="utils\FileUtility.cs" />
+    <Compile Include="utils\ScrollHelper.cs" />
+    <Page Include="GameWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameWindow.xaml.cs">
+      <DependentUpon>GameWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="HomeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrivateChatWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Signin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignUpWinow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hnet.com-image.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets'))" />
+  </Target>
+</Project>

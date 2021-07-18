@@ -1,0 +1,1247 @@
+Received: {"status": "error", "message": "require_auth", "code": 306}
+
+Stream send: {"action":"auth","username":"TheSanardev","login_by":"user_pass","password":"13799215"}
+
+Signin: SocketMessage: TypeObject: Dooz.socket.models.LoggedUser
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+fullname: Behzad
+Received: {"status": "ok", "data": "{'username': 'TheSanardev', 'fullname': 'Behzad', 'id': 30, 'token': 'b42106f6-e72d-434e-8548-10896880ccbb'}", "type": "user"}
+
+Received: {"status": "ok", "data": "[{'username': 'Test', 'fullname': 'Test', 'id': 1}]", "type": "online_players"}
+
+Received: {"status": "ok", "data": "[]", "type": "incoming_game_request"}
+
+Socket parse message Error : Unterminated string. Expected delimiter: ". Path 'data', line 1, position 1121.
+Received: {"status": "ok", "data": "[{'username': 'Test', 'player_id': 1, 'fullname': 'Test', 'id': 83, 'timestamp': 1617019176}]", "type": "outgoing_game_request"}
+{"status": "ok", "data": "{'username': 'TheSanardev', 'wins': 8, 'fullname': 'Behzad', 'total_games': 23}", "type": "me"}
+{"status": "ok", "data": "{'messages': [{'player_id': 1, 'timestamp': 1617019623, 'message': 'salam mrc', 'fullname': 'Test', 'id': 386}, {'player_id': 30, 'timestamp': 1617019629, 'message': 'dige che khabar?', 'fullname': 'Behzad', 'id': 387}, {'player_id': 30, 'timestamp': 1617019632, 'message': 'brim game?', 'fullname': 'Behzad', 'id': 388}, {'player_id': 1, 'timestamp': 1617019639, 'message': 'Accept kon', 'fullname': 'Test', 'id': 389}, {'player_id': 1, 'timestamp': 1617198564, 'message': 'salam', 'fullname': 'Test', 'id': 390}, {'player_id': 1, 'timestamp': 1617198566, 'message': 'khobi?', 'fullname': 'Test', 'id': 391}, {'player_id': 1, 'timestamp': 1617198569, 'message': 'bah bah', 'fullname': 'Test', 'id': 392}, {'player_id': 1, 'timestamp': 1617198572, 'message': 'bbin che kardi', 'fullname': 'Test', 'id': 393}, {'player_id': 30, 'timestamp': 1617198703, 'message': 'dahanet service', 'fullname': 'Behzad', 'id': 394}, {'player_id': 1, 'timestamp': 1617199418, 'message': 's', 'fullname': 'Test', 'id': 395}, {'player_id': 1, 'timestamp': 1617199452, 'message': '.', 'fullname': 'Test', 'id': 396},
+Socket parse message Error : Additional text encountered after finished reading JSON content: ,. Path '', line 1, position 89.
+Received:  {'player_id': 1, 'timestamp': 1617199453, 'message': '.', 'fullname': 'Test', 'id': 397}, {'player_id': 1, 'timestamp': 1617199454, 'message': 'Salam', 'fullname': 'Test', 'id': 398}, {'player_id': 1, 'timestamp': 1617199464, 'message': 'khobi', 'fullname': 'Test', 'id': 399}, {'player_id': 30, 'timestamp': 1617199493, 'message': '.', 'fullname': 'Behzad', 'id': 400}, {'player_id': 1, 'timestamp': 1617199498, 'message': 'salam', 'fullname': 'Test', 'id': 401}, {'player_id': 1, 'timestamp': 1617199500, 'message': 'khobi?', 'fullname': 'Test', 'id': 402}, {'player_id': 30, 'timestamp': 1617205773, 'message': '.', 'fullname': 'Behzad', 'id': 403}, {'player_id': 30, 'timestamp': 1617205786, 'message': 'salam', 'fullname': 'Behzad', 'id': 404}, {'player_id': 30, 'timestamp': 1617205787, 'message': 'khoni?', 'fullname': 'Behzad', 'id': 405}], 'must_clear_history': 1}", "type": "global_messages"}
+
+Stream send: {"action":"game_request","player_id":1}
+
+Received: {"status": "ok", "data": "[{'username': 'Test', 'player_id': 1, 'fullname': 'Test', 'id': 86, 'timestamp': 1617206254}]", "type": "outgoing_game_request"}
+
+Stream send: {"action":"get_game_data","game_id":86}
+
+Received: {"status": "ok", "data": "{'game_id': 86}", "type": "start_game"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 0, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Socket parse message Error : Unterminated string. Expected delimiter: ". Path 'data', line 1, position 2800.
+Received: {"status": "ok", "data": "{'chat_with': 1, 'messages': [{'timestamp': 1616661719, 'message': 'Haji', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616661721, 'message': 'Pashmam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616661734, 'message': 'hello', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616661741, 'message': 'chetoriii', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616661750, 'message': '\\u0642\\u0631\\u0628\\u0648\\u0646\\u062a \\u062a\\u0648 \\u062e\\u0648\\u0628\\u06cc\\u061f', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616661755, 'message': '\\u0641\\u062f\\u0627\\u062a', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616703951, 'message': 'Salam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874444, 'message': '.', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874445, 'message': '.', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874533, 'message': 'd', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874534, 'message': 'd', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874549, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874607, 'message': '.', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874613, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874614, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874617, 'message': 'Salam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874680, 'message': '.', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874682, 'message': '.', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874916, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874917, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874919, 'message': 'salam', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874921, 'message': 'khobi?', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616928314, 'message': 'Salam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616928317, 'message': 'Chetori tooo', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616928323, 'message': 'Brim soragh game', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616943870, 'message': 'Salammmm', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616943872, 'message': 'chetoriii', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1617019649, 'message': 'salam', 'sender_play
+Socket parse message Error : Unexpected character encountered while parsing value: e. Path '', line 0, position 0.
+Received: er_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617198591, 'message': 'salam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617198594, 'message': 'bazi kn', 'sender_player_id': 30, 'receiver_player_id': 1}]}", "type": "private_chat_messages"}
+
+Stream send: {"action":"add_message_in_private_chat","player_id":1,"message":"."}
+
+Received: {"status": "ok", "data": "{'timestamp': 1617206271.0, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}", "type": "new_private_chat_message"}
+
+Stream send: {"action":"add_message_in_private_chat","player_id":1,"message":"payam ha ko"}
+
+Received: {"status": "ok", "data": "{'timestamp': 1617206278.0, 'message': 'payam ha ko', 'sender_player_id': 30, 'receiver_player_id': 1}", "type": "new_private_chat_message"}
+
+Stream send: {"action":"add_message_in_private_chat","player_id":1,"message":"pashm"}
+
+Received: {"status": "ok", "data": "{'timestamp': 1617206280.0, 'message': 'pashm', 'sender_player_id': 30, 'receiver_player_id': 1}", "type": "new_private_chat_message"}
+
+Received: {"status": "ok", "data": "{'timestamp': 1617206281.0, 'message': 'fgdfg', 'sender_player_id': 1, 'receiver_player_id': 30}", "type": "new_private_chat_message"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":3,"row":2}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 0, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 0, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":3,"row":6}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 0, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '3', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 0, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '3', '💣', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 0, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '2', '', '', '', ''], ['', '', '', '3', '💣', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":4,"row":5}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '2', '💣', '', '', ''], ['', '', '', '3', '💣', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":2,"row":6}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '', '2', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":2,"row":5}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '', '2', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":6,"row":1}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '3', ''], ['', '', '', '1', '', '', '', ''], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '3', ''], ['', '', '', '1', '', '', '2', ''], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":7,"row":1}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '3', '2'], ['', '', '', '1', '', '', '2', ''], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '3', '2'], ['', '', '', '1', '', '1', '2', ''], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":5,"row":1}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 2, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '💣', '3', '2'], ['', '', '', '1', '', '1', '2', ''], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":6,"row":0}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 3, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '💣', ''], ['', '', '', '1', '', '💣', '3', '2'], ['', '', '', '1', '', '1', '2', ''], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":7,"row":2}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '', '💣', ''], ['', '', '', '1', '', '💣', '3', '2'], ['', '', '', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":5,"row":0}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '2', '💣', ''], ['', '', '', '1', '', '💣', '3', '2'], ['', '', '', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', ''], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '', '', '', '2', '💣', ''], ['', '', '', '1', '', '💣', '3', '2'], ['', '', '', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', '2'], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":2,"row":0}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '0', '', '', '2', '💣', ''], ['', '', '', '1', '', '💣', '3', '2'], ['', '', '', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', '2'], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '0', '', '', '2', '💣', ''], ['', '', '1', '1', '', '💣', '3', '2'], ['', '', '', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', '2'], ['', '', '2', '3', '💣', '', '', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"add_message_in_private_chat","player_id":1,"message":"گوشی رو روی سرت خورد میکنما"}
+
+Received: {"status": "ok", "data": "{'timestamp': 1617206398.0, 'message': '\\u06af\\u0648\\u0634\\u06cc \\u0631\\u0648 \\u0631\\u0648\\u06cc \\u0633\\u0631\\u062a \\u062e\\u0648\\u0631\\u062f \\u0645\\u06cc\\u06a9\\u0646\\u0645\\u0627', 'sender_player_id': 30, 'receiver_player_id': 1}", "type": "new_private_chat_message"}
+
+Stream send: {"action":"add_message_in_private_chat","player_id":1,"message":"مثل آدم بازی کن"}
+
+Received: {"status": "ok", "data": "{'timestamp': 1617206400.0, 'message': '\\u0645\\u062b\\u0644 \\u0622\\u062f\\u0645 \\u0628\\u0627\\u0632\\u06cc \\u06a9\\u0646', 'sender_player_id': 30, 'receiver_player_id': 1}", "type": "new_private_chat_message"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":6,"row":6}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '0', '', '', '2', '💣', ''], ['', '', '1', '1', '', '💣', '3', '2'], ['', '', '', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', '2'], ['', '', '2', '3', '💣', '', '2', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '0', '', '', '2', '💣', ''], ['', '', '1', '1', '', '💣', '3', '2'], ['', '', '💣', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '1', '2', '💣', '', '', '2'], ['', '', '2', '3', '💣', '', '2', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 4, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '0', '', '', '2', '💣', ''], ['', '', '1', '1', '', '💣', '3', '2'], ['', '', '💣', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '💣', ''], ['', '', '1', '2', '💣', '', '', '2'], ['', '', '2', '3', '💣', '', '2', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 5, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '0', '', '', '2', '💣', ''], ['', '', '1', '1', '', '💣', '3', '2'], ['', '', '💣', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '', '', '', '', '', '💣', ''], ['', '', '1', '2', '💣', '', '💣', '2'], ['', '', '2', '3', '💣', '', '2', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 6, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '0', '', '', '2', '💣', ''], ['', '', '1', '1', '', '💣', '3', '2'], ['', '', '💣', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '💣', '', '', '', '', '💣', ''], ['', '', '1', '2', '💣', '', '💣', '2'], ['', '', '2', '3', '💣', '', '2', ''], ['', '', '💣', '2', '', '', '', '']], 'player_two': {'score': 7, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '0', '', '', '2', '💣', ''], ['', '', '1', '1', '', '💣', '3', '2'], ['', '', '💣', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '💣', '', '', '', '', '💣', ''], ['', '', '1', '2', '💣', '', '💣', '2'], ['', '', '2', '3', '💣', '', '2', ''], ['', '', '💣', '2', '', '', '', '0']], 'player_two': {'score': 7, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":1,"row":6}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '0', '', '', '2', '💣', ''], ['', '', '1', '1', '', '💣', '3', '2'], ['', '', '💣', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '💣', '', '', '', '', '💣', ''], ['', '', '1', '2', '💣', '', '💣', '2'], ['', '3', '2', '3', '💣', '', '2', ''], ['', '', '💣', '2', '', '', '', '0']], 'player_two': {'score': 7, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '0', '', '', '2', '💣', ''], ['', '', '1', '1', '', '💣', '3', '2'], ['', '', '💣', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '💣', '', '', '', '', '💣', ''], ['', '', '1', '2', '💣', '', '💣', '2'], ['', '3', '2', '3', '💣', '', '2', ''], ['', '💣', '💣', '2', '', '', '', '0']], 'player_two': {'score': 8, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":86,"col":0,"row":6}
+
+Received: {"status": "ok", "data": "{'message': \"It's not your turn\"}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'message': 'Try again and hope you win!', 'is_winner': 0}", "type": "game_end"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 86, 'data': [['', '', '0', '', '', '2', '💣', ''], ['', '', '1', '1', '', '💣', '3', '2'], ['', '', '💣', '1', '', '1', '2', '💣'], ['', '💣', '', '', '0', '', '', ''], ['', '💣', '', '', '', '', '💣', ''], ['', '', '1', '2', '💣', '', '💣', '2'], ['💣', '3', '2', '3', '💣', '', '2', ''], ['', '💣', '💣', '2', '', '', '', '0']], 'player_two': {'score': 9, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+Received: {"status": "ok", "data": "[{'username': 'Test', 'fullname': 'Test', 'id': 1}]", "type": "online_players"}
+
+Received: {"status": "ok", "data": "[]", "type": "incoming_game_request"}
+
+Received: {"status": "ok", "data": "[]", "type": "outgoing_game_request"}
+{"status": "ok", "data": "{'username': 'TheSanardev', 'wins': 8, 'fullname': 'Behzad', 'total_games': 24}", "type": "me"}
+{"status": "ok", "data": "{'messages': [{'player_id': 1, 'timestamp': 1617019623, 'message': 'salam mrc', 'fullname': 'Test', 'id': 386}, {'player_id': 30, 'timestamp': 1617019629, 'message': 'dige che khabar?', 'fullname': 'Behzad', 'id': 387}, {'player_id': 30, 'timestamp': 1617019632, 'message': 'brim game?', 'fullname': 'Behzad', 'id': 388}, {'player_id': 1, 'timestamp': 1617019639, 'message': 'Accept kon', 'fullname': 'Test', 'id': 389}, {'player_id': 1, 'timestamp': 1617198564, 'message': 'salam', 'fullname': 'Test', 'id': 390}, {'player_id': 1, 'timestamp': 1617198566, 'message': 'khobi?', 'fullname': 'Test', 'id': 391}, {'player_id': 1, 'timestamp': 1617198569, 'message': 'bah bah', 'fullname': 'Test', 'id': 392}, {'player_id': 1, 'timestamp': 1617198572, 'message': 'bbin che kardi', 'fullname': 'Test', 'id': 393}, {'player_id': 30, 'timestamp': 1617198703, 'message': 'dahanet service', 'fullname': 'Behzad', 'id': 394}, {'player_id': 1, 'timestamp': 1617199418, 'message': 's', 'fullname': 'Test', 'id': 395}, {'player_id': 1, 'timestamp': 1617199452, 'message': '.', 'fullname': 'Test', 'id': 396}, {'player_id': 1, 'timestamp': 1617199453, 'message': '.', 'fullname': 'Test', 'id': 397}, {'player_id': 1, 'timestamp': 1617199454, 'message': 'Salam', 'fullname': 'Test', 'id': 398}, {'player_id': 1, 'timestamp': 1617199464, 'message': 'khobi', 'fullname': 'Test', 'id': 399}, {'player_id': 30, 'timestamp': 1617199493, 'message': '.', 'fullname': 'Behzad', 'id': 400}, {'player_id': 1, 'timestamp': 1617199498, 'message': 'salam', 'fullname': 'Test', 'id': 401}, {'player_id': 1, 'timestamp': 1617199500, 'message': 'khobi?', 'fullname': 'Test', 'id': 402}, {'player_id': 30, 'timestamp': 1617205773, 'message': '.', 'fullname': 'Behzad', 'id': 403}, {'player_id': 30, 'timestamp': 1617205786, 'message': 'salam', 'fullname': 'Behzad', 'id': 404}, {'player_id': 30, 'timestamp': 1617205787, 'message': 'khoni?', 'fullname': 'Behzad', 'id': 405}], 'must_clear_history': 1}", "type": "global_messages"}
+
+Stream send: {"action":"game_request","player_id":1}
+
+Received: {"status": "ok", "data": "[{'username': 'Test', 'player_id': 1, 'fullname': 'Test', 'id': 87, 'timestamp': 1617206529}]", "type": "outgoing_game_request"}
+
+Stream send: {"action":"get_game_data","game_id":87}
+
+Received: {"status": "ok", "data": "{'game_id': 87}", "type": "start_game"}
+
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Received: 
+Stream send: {"action":"auth","login_by":"token","token":"b42106f6-e72d-434e-8548-10896880ccbb"}
+
+Received: {"status": "error", "message": "require_auth", "code": 306}
+
+Signin: SocketMessage: TypeObject: Dooz.socket.models.LoggedUser
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+fullname: Behzad
+Received: {"status": "ok", "data": "{'username': 'TheSanardev', 'fullname': 'Behzad', 'id': 30, 'token': 'b42106f6-e72d-434e-8548-10896880ccbb'}", "type": "user"}
+
+Received: {"status": "ok", "data": "[]", "type": "online_players"}
+
+Received: {"status": "ok", "data": "[]", "type": "incoming_game_request"}
+
+Received: {"status": "ok", "data": "[]", "type": "outgoing_game_request"}
+{"status": "ok", "data": "{'game_id': 87, 'player_name': 'Test'}", "type": "resume_game"}
+{"status": "ok", "data": "{'username': 'TheSanardev', 'wins': 8, 'fullname': 'Behzad', 'total_games': 25}", "type": "me"}
+{"status": "ok", "data": "{'messages': [{'player_id': 1, 'timestamp': 1617019623, 'message': 'salam mrc', 'fullname': 'Test', 'id': 386}, {'player_id': 30, 'timestamp': 1617019629, 'message': 'dige che khabar?', 'fullname': 'Behzad', 'id': 387}, {'player_id': 30, 'timestamp': 1617019632, 'message': 'brim game?', 'fullname': 'Behzad', 'id': 388}, {'player_id': 1, 'timestamp': 1617019639, 'message': 'Accept kon', 'fullname': 'Test', 'id': 389}, {'player_id': 1, 'timestamp': 1617198564, 'message': 'salam', 'fullname': 'Test', 'id': 390}, {'player_id': 1, 'timestamp': 1617198566, 'message': 'khobi?', 'fullname': 'Test', 'id': 391}, {'player_id': 1, 'timestamp': 1617198569, 'message': 'bah bah', 'fullname': 'Test', 'id': 392}, {'player_id': 1, 'timestamp': 1617198572, 'message': 'bbin che kardi', 'fullname': 'Test', 'id': 393}, {'player_id': 30, 'timestamp': 1617198703, 'message': 'dahanet service', 'fullname': 'Behzad', 'id': 394}, {'player_id': 1, 'timestamp': 1617199418, 'message': 's', 'fullname': 'Test', 'id': 395}, {'player_id': 1, 'timestamp': 1617199452, 'message': '.', 'fullname': 'Test', 'id': 396}, {'player_id': 1, 'timestamp': 1617199453, 'message': '.', 'fullname': 'Test', 'id': 397}, {'player_id': 1, 'timestamp': 1617199454, 'message': 'Salam', 'fullname': 'Test', 'id': 398}, {'player_id': 1, 'timestamp': 1617199464, 'message': 'khobi', 'fullname': 'Test', 'id': 399}, {'player_id': 30, 'timestamp': 1617199493, 'message': '.', 'fullname': 'Behzad', 'id': 400}, {'player_id': 1, 'timestamp': 1617199498, 'message': 'salam', 'fullname': 'Test', 'id': 401}, {'player_id': 1, 'timestamp': 1617199500, 'message': 'khobi?', 'fullname': 'Test', 'id': 402}, {'player_id': 30, 'timestamp': 1617205773, 'message': '.', 'fullname': 'Behzad', 'id': 403}, {'player_id': 30, 'timestamp': 1617205786, 'message': 'salam', 'fullname': 'Behzad', 'id': 404}, {'player_id': 30, 'timestamp': 1617205787, 'message': 'khoni?', 'fullname': 'Behzad', 'id': 405}], 'must_clear_history': 1}", "type": "global_messages"}
+
+Stream send: {"action":"get_game_data","game_id":87}
+
+Received: {"status": "ok", "data": "{'player': {'username': 'Test', 'fullname': 'Test', 'id': 1}, 'is_online': 1}", "type": "player_status"}
+
+Stream send: {"action":"get_game_data","game_id":87}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 0, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'chat_with': 1, 'messages': [{'timestamp': 1616703951, 'message': 'Salam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874444, 'message': '.', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874445, 'message': '.', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874533, 'message': 'd', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874534, 'message': 'd', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874549, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874607, 'message': '.', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874613, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874614, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874617, 'message': 'Salam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874680, 'message': '.', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874682, 'message': '.', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874916, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874917, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874919, 'message': 'salam', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874921, 'message': 'khobi?', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616928314, 'message': 'Salam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616928317, 'message': 'Chetori tooo', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616928323, 'message': 'Brim soragh game', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616943870, 'message': 'Salammmm', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616943872, 'message': 'chetoriii', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1617019649, 'message': 'salam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617198591, 'message': 'salam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617198594, 'message': 'bazi kn', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617206271, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617206278, 'message': 'payam ha ko', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617206280, 'message': 'pashm', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617206281, 'message': 'fgdfg', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1617206398, 'message': '\\u06af\\u0648\\u0634\\u06cc \\u0631\\u0648 \\u0631\\u0648\\u06cc \\u0633\\u0631\\u062a \\u062e\\u0648\\u0631\\u062f \\u0645\\u06cc\\u06a9\\u0646\\u0645\\u0627', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617206400, 'message': '\\u0645\\u062b\\u0644 \\u0622\\u062f\\u0645 \\u0628\\u0627\\u0632\\u06cc \\u06a9\\u0646', 'sender_player_id': 30, 'receiver_player_id': 1}]}", "type": "private_chat_messages"}
+
+Stream send: {"action":"add_message_in_private_chat","player_id":1,"message":"."}
+
+Received: {"status": "ok", "data": "{'timestamp': 1617206575.0, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}", "type": "new_private_chat_message"}
+
+Stream send: {"action":"add_message_in_private_chat","player_id":1,"message":"هستی؟"}
+
+Received: {"status": "ok", "data": "{'timestamp': 1617206577.0, 'message': '\\u0647\\u0633\\u062a\\u06cc\\u061f', 'sender_player_id': 30, 'receiver_player_id': 1}", "type": "new_private_chat_message"}
+
+Received: {"status": "ok", "data": "{'timestamp': 1617206582.0, 'message': 'fgdf', 'sender_player_id': 1, 'receiver_player_id': 30}", "type": "new_private_chat_message"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":3,"row":3}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 0, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'timestamp': 1617206598.0, 'message': 'salaaaaam dadashe golam', 'sender_player_id': 1, 'receiver_player_id': 30}", "type": "new_private_chat_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 0, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '2', '', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":3,"row":2}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 0, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '', '', '1', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 0, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":1,"row":2}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":1,"row":4}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '2', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '', '', '', '', '', '', ''], ['', '', '3', '', '', '', '', ''], ['', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '2', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":1,"row":1}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '', '', '', '', '', '', ''], ['', '3', '3', '', '', '', '', ''], ['', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '2', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '', '', '', '', '', '', ''], ['', '3', '3', '💣', '', '', '', ''], ['', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '2', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '', '', '', '', '', ''], ['', '3', '3', '💣', '', '', '', ''], ['', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '2', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":2,"row":0}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '', '', '', '', ''], ['', '3', '3', '💣', '', '', '', ''], ['', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '2', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '💣', '', '', '', ''], ['', '3', '3', '💣', '', '', '', ''], ['', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '2', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '💣', '', '', '', ''], ['', '3', '3', '💣', '', '', '', ''], ['', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '2', '2', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":0,"row":1}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 2, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '💣', '', '', '', ''], ['💣', '3', '3', '💣', '', '', '', ''], ['', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '2', '2', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":0,"row":2}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 3, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '💣', '', '', '', ''], ['💣', '3', '3', '💣', '', '', '', ''], ['💣', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '2', '2', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":3,"row":4}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '💣', '', '', '', ''], ['💣', '3', '3', '💣', '', '', '', ''], ['💣', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '2', '2', '💣', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":1,"row":5}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 5, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '💣', '', '', '', ''], ['💣', '3', '3', '💣', '', '', '', ''], ['💣', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['', '2', '2', '💣', '', '', '', ''], ['', '💣', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":0,"row":4}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 5, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '💣', '', '', '', ''], ['💣', '3', '3', '💣', '', '', '', ''], ['💣', '💣', '2', '1', '', '', '', ''], ['', '', '2', '1', '', '', '', ''], ['2', '2', '2', '💣', '', '', '', ''], ['', '💣', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 5, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '💣', '', '', '', ''], ['💣', '3', '3', '💣', '', '', '', ''], ['💣', '💣', '2', '1', '', '', '', ''], ['💣', '', '2', '1', '', '', '', ''], ['2', '2', '2', '💣', '', '', '', ''], ['', '💣', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 5, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '💣', '', '', '', ''], ['💣', '3', '3', '💣', '', '', '', ''], ['💣', '💣', '2', '1', '', '', '', ''], ['💣', '', '2', '1', '', '', '', ''], ['2', '2', '2', '💣', '', '', '', ''], ['', '💣', '', '', '', '', '', ''], ['', '', '', '3', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":5,"row":6}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 6, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '💣', '', '', '', ''], ['💣', '3', '3', '💣', '', '', '', ''], ['💣', '💣', '2', '1', '', '', '', ''], ['💣', '', '2', '1', '', '', '', ''], ['2', '2', '2', '💣', '', '', '', ''], ['', '💣', '', '', '', '', '', ''], ['', '', '', '3', '', '💣', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":4,"row":5}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 7, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '💣', '', '', '', ''], ['💣', '3', '3', '💣', '', '', '', ''], ['💣', '💣', '2', '1', '', '', '', ''], ['💣', '', '2', '1', '', '', '', ''], ['2', '2', '2', '💣', '', '', '', ''], ['', '💣', '', '', '💣', '', '', ''], ['', '', '', '3', '', '💣', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":2,"row":7}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 8, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '💣', '', '', '', ''], ['💣', '3', '3', '💣', '', '', '', ''], ['💣', '💣', '2', '1', '', '', '', ''], ['💣', '', '2', '1', '', '', '', ''], ['2', '2', '2', '💣', '', '', '', ''], ['', '💣', '', '', '💣', '', '', ''], ['', '', '', '3', '', '💣', '', ''], ['', '', '💣', '', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":87,"col":4,"row":7}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'message': 'You played very well! good job', 'is_winner': 1}", "type": "game_end"}
+{"status": "ok", "data": "{'player_one': {'score': 9, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 87, 'data': [['', '1', '2', '💣', '', '', '', ''], ['💣', '3', '3', '💣', '', '', '', ''], ['💣', '💣', '2', '1', '', '', '', ''], ['💣', '', '2', '1', '', '', '', ''], ['2', '2', '2', '💣', '', '', '', ''], ['', '💣', '', '', '💣', '', '', ''], ['', '', '', '3', '', '💣', '', ''], ['', '', '💣', '', '💣', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+Received: {"status": "ok", "data": "[{'username': 'Test', 'fullname': 'Test', 'id': 1}]", "type": "online_players"}
+
+Received: {"status": "ok", "data": "[]", "type": "incoming_game_request"}
+
+Socket parse message Error : Unterminated string. Expected delimiter: ". Path 'data', line 1, position 1212.
+Received: {"status": "ok", "data": "[]", "type": "outgoing_game_request"}
+{"status": "ok", "data": "{'username': 'TheSanardev', 'wins': 9, 'fullname': 'Behzad', 'total_games': 25}", "type": "me"}
+{"status": "ok", "data": "{'messages': [{'player_id': 1, 'timestamp': 1617019623, 'message': 'salam mrc', 'fullname': 'Test', 'id': 386}, {'player_id': 30, 'timestamp': 1617019629, 'message': 'dige che khabar?', 'fullname': 'Behzad', 'id': 387}, {'player_id': 30, 'timestamp': 1617019632, 'message': 'brim game?', 'fullname': 'Behzad', 'id': 388}, {'player_id': 1, 'timestamp': 1617019639, 'message': 'Accept kon', 'fullname': 'Test', 'id': 389}, {'player_id': 1, 'timestamp': 1617198564, 'message': 'salam', 'fullname': 'Test', 'id': 390}, {'player_id': 1, 'timestamp': 1617198566, 'message': 'khobi?', 'fullname': 'Test', 'id': 391}, {'player_id': 1, 'timestamp': 1617198569, 'message': 'bah bah', 'fullname': 'Test', 'id': 392}, {'player_id': 1, 'timestamp': 1617198572, 'message': 'bbin che kardi', 'fullname': 'Test', 'id': 393}, {'player_id': 30, 'timestamp': 1617198703, 'message': 'dahanet service', 'fullname': 'Behzad', 'id': 394}, {'player_id': 1, 'timestamp': 1617199418, 'message': 's', 'fullname': 'Test', 'id': 395}, {'player_id': 1, 'timestamp': 1617199452, 'message': '.', 'fullname': 'Test', 'id': 396}, {'player_id': 1, 'timestamp': 1617199453, 'message': '.', 'fullname': 'Test', 'id': 397}, 
+Socket parse message Error : Additional text encountered after finished reading JSON content: ,. Path '', line 1, position 92.
+Received: {'player_id': 1, 'timestamp': 1617199454, 'message': 'Salam', 'fullname': 'Test', 'id': 398}, {'player_id': 1, 'timestamp': 1617199464, 'message': 'khobi', 'fullname': 'Test', 'id': 399}, {'player_id': 30, 'timestamp': 1617199493, 'message': '.', 'fullname': 'Behzad', 'id': 400}, {'player_id': 1, 'timestamp': 1617199498, 'message': 'salam', 'fullname': 'Test', 'id': 401}, {'player_id': 1, 'timestamp': 1617199500, 'message': 'khobi?', 'fullname': 'Test', 'id': 402}, {'player_id': 30, 'timestamp': 1617205773, 'message': '.', 'fullname': 'Behzad', 'id': 403}, {'player_id': 30, 'timestamp': 1617205786, 'message': 'salam', 'fullname': 'Behzad', 'id': 404}, {'player_id': 30, 'timestamp': 1617205787, 'message': 'khoni?', 'fullname': 'Behzad', 'id': 405}], 'must_clear_history': 1}", "type": "global_messages"}
+
+Stream send: {"action":"game_request","player_id":1}
+
+Received: {"status": "ok", "data": "[{'username': 'Test', 'player_id': 1, 'fullname': 'Test', 'id': 88, 'timestamp': 1617206896}]", "type": "outgoing_game_request"}
+
+Stream send: {"action":"get_game_data","game_id":88}
+
+Received: {"status": "ok", "data": "{'game_id': 88}", "type": "start_game"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 0, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'chat_with': 1, 'messages': [{'timestamp': 1616874534, 'message': 'd', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874549, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874607, 'message': '.', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874613, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874614, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874617, 'message': 'Salam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874680, 'message': '.', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874682, 'message': '.', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874916, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874917, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616874919, 'message': 'salam', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616874921, 'message': 'khobi?', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616928314, 'message': 'Salam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616928317, 'message': 'Chetori tooo', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616928323, 'message': 'Brim soragh game', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1616943870, 'message': 'Salammmm', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1616943872, 'message': 'chetoriii', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1617019649, 'message': 'salam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617198591, 'message': 'salam', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617198594, 'message': 'bazi kn', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617206271, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617206278, 'message': 'payam ha ko', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617206280, 'message': 'pashm', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617206281, 'message': 'fgdfg', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1617206398, 'message': '\\u06af\\u0648\\u0634\\u06cc \\u0631\\u0648 \\u0631\\u0648\\u06cc \\u0633\\u0631\\u062a \\u062e\\u0648\\u0631\\u062f \\u0645\\u06cc\\u06a9\\u0646\\u0645\\u0627', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617206400, 'message': '\\u0645\\u062b\\u0644 \\u0622\\u062f\\u0645 \\u0628\\u0627\\u0632\\u06cc \\u06a9\\u0646', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617206575, 'message': '.', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617206577, 'message': '\\u0647\\u0633\\u062a\\u06cc\\u061f', 'sender_player_id': 30, 'receiver_player_id': 1}, {'timestamp': 1617206582, 'message': 'fgdf', 'sender_player_id': 1, 'receiver_player_id': 30}, {'timestamp': 1617206598, 'message': 'salaaaaam dadashe golam', 'sender_player_id': 1, 'receiver_player_id': 30}]}", "type": "private_chat_messages"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":4,"row":2}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":6,"row":5}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '2', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '2', '1'], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":5,"row":6}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '2', '1'], ['', '', '', '', '', '1', '', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '2', '1'], ['', '', '', '', '', '1', '2', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":5,"row":5}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 1, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '2', ''], ['', '', '', '', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":5,"row":4}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 2, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '💣', '2', ''], ['', '', '', '', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":7,"row":4}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 2, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '💣', '2', '1'], ['', '', '', '', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', ''], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 0, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 2, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '💣', '2', '1'], ['', '', '', '', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 2, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '3', '', '', '💣', '2', '1'], ['', '', '', '', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":3,"row":5}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 2, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '3', '', '', '💣', '2', '1'], ['', '', '', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 2, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '4', '3', '', '', '💣', '2', '1'], ['', '', '', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":2,"row":5}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 3, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '4', '3', '', '', '💣', '2', '1'], ['', '', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":0,"row":4}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '', '', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":1,"row":3}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '3', '', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 1, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['', '3', '', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 4, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['2', '3', '', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":2,"row":3}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 5, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":1,"row":0}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 5, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['', '2', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 5, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['1', '2', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":1,"row":1}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 5, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['1', '2', '', '', '', '', '', ''], ['', '3', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 2, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 5, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['1', '2', '', '', '', '', '', ''], ['💣', '3', '', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 5, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['1', '2', '', '', '', '', '', ''], ['💣', '3', '2', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":2,"row":0}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 6, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['1', '2', '💣', '', '', '', '', ''], ['💣', '3', '2', '', '', '', '', ''], ['', '', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":1,"row":2}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 7, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['1', '2', '💣', '', '', '', '', ''], ['💣', '3', '2', '', '', '', '', ''], ['', '💣', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":6,"row":1}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 8, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['1', '2', '💣', '', '', '', '', ''], ['💣', '3', '2', '', '', '', '💣', ''], ['', '💣', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '', '', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":2,"row":7}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 8, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['1', '2', '💣', '', '', '', '', ''], ['💣', '3', '2', '', '', '', '💣', ''], ['', '💣', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '', '', '1', '2', '💣'], ['', '', '1', '', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 8, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['1', '2', '💣', '', '', '', '', ''], ['💣', '3', '2', '', '', '', '💣', ''], ['', '💣', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '2', '', '1', '2', '💣'], ['', '', '1', '', '', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":4,"row":7}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 8, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['1', '2', '💣', '', '', '', '', ''], ['💣', '3', '2', '', '', '', '💣', ''], ['', '💣', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '2', '', '1', '2', '💣'], ['', '', '1', '', '0', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'Test'}", "type": "game_data"}
+
+Received: {"status": "ok", "data": "{'player_one': {'score': 8, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['1', '2', '💣', '', '', '', '', ''], ['💣', '3', '2', '', '', '', '💣', ''], ['', '💣', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '', '2', '', '1', '2', '💣'], ['', '', '1', '1', '0', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"minroob_click_action","game_id":88,"col":2,"row":6}
+
+Received: {"status": "ok", "data": "{'message': 'Bomb is found! Try another one.'}", "type": "game_message"}
+
+Received: {"status": "ok", "data": "{'message': 'You played very well! good job', 'is_winner': 1}", "type": "game_end"}
+{"status": "ok", "data": "{'player_one': {'score': 9, 'id': 30, 'name': 'TheSanardev'}, 'game_id': 88, 'data': [['1', '2', '💣', '', '', '', '', ''], ['💣', '3', '2', '', '', '', '💣', ''], ['', '💣', '', '', '💣', '', '', ''], ['2', '3', '💣', '', '', '', '', ''], ['💣', '4', '3', '', '', '💣', '2', '1'], ['', '💣', '💣', '2', '', '1', '2', '1'], ['', '', '💣', '2', '', '1', '2', '💣'], ['', '', '1', '1', '0', '', '', '']], 'player_two': {'score': 3, 'id': 1, 'name': 'Test'}, 'turn': 'TheSanardev'}", "type": "game_data"}
+
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+Received: {"status": "ok", "data": "[{'username': 'Test', 'fullname': 'Test', 'id': 1}]", "type": "online_players"}
+
+Received: {"status": "ok", "data": "[]", "type": "incoming_game_request"}
+
+Socket parse message Error : Unterminated string. Expected delimiter: ". Path 'data', line 1, position 1211.
+Received: {"status": "ok", "data": "[]", "type": "outgoing_game_request"}
+{"status": "ok", "data": "{'username': 'TheSanardev', 'wins': 10, 'fullname': 'Behzad', 'total_games': 26}", "type": "me"}
+{"status": "ok", "data": "{'messages': [{'player_id': 1, 'timestamp': 1617019623, 'message': 'salam mrc', 'fullname': 'Test', 'id': 386}, {'player_id': 30, 'timestamp': 1617019629, 'message': 'dige che khabar?', 'fullname': 'Behzad', 'id': 387}, {'player_id': 30, 'timestamp': 1617019632, 'message': 'brim game?', 'fullname': 'Behzad', 'id': 388}, {'player_id': 1, 'timestamp': 1617019639, 'message': 'Accept kon', 'fullname': 'Test', 'id': 389}, {'player_id': 1, 'timestamp': 1617198564, 'message': 'salam', 'fullname': 'Test', 'id': 390}, {'player_id': 1, 'timestamp': 1617198566, 'message': 'khobi?', 'fullname': 'Test', 'id': 391}, {'player_id': 1, 'timestamp': 1617198569, 'message': 'bah bah', 'fullname': 'Test', 'id': 392}, {'player_id': 1, 'timestamp': 1617198572, 'message': 'bbin che kardi', 'fullname': 'Test', 'id': 393}, {'player_id': 30, 'timestamp': 1617198703, 'message': 'dahanet service', 'fullname': 'Behzad', 'id': 394}, {'player_id': 1, 'timestamp': 1617199418, 'message': 's', 'fullname': 'Test', 'id': 395}, {'player_id': 1, 'timestamp': 1617199452, 'message': '.', 'fullname': 'Test', 'id': 396}, {'player_id': 1, 'timestamp': 1617199453, 'message': '.', 'fullname': 'Test', 'id': 397},
+Socket parse message Error : Additional text encountered after finished reading JSON content: ,. Path '', line 1, position 93.
+Received:  {'player_id': 1, 'timestamp': 1617199454, 'message': 'Salam', 'fullname': 'Test', 'id': 398}, {'player_id': 1, 'timestamp': 1617199464, 'message': 'khobi', 'fullname': 'Test', 'id': 399}, {'player_id': 30, 'timestamp': 1617199493, 'message': '.', 'fullname': 'Behzad', 'id': 400}, {'player_id': 1, 'timestamp': 1617199498, 'message': 'salam', 'fullname': 'Test', 'id': 401}, {'player_id': 1, 'timestamp': 1617199500, 'message': 'khobi?', 'fullname': 'Test', 'id': 402}, {'player_id': 30, 'timestamp': 1617205773, 'message': '.', 'fullname': 'Behzad', 'id': 403}, {'player_id': 30, 'timestamp': 1617205786, 'message': 'salam', 'fullname': 'Behzad', 'id': 404}, {'player_id': 30, 'timestamp': 1617205787, 'message': 'khoni?', 'fullname': 'Behzad', 'id': 405}], 'must_clear_history': 1}", "type": "global_messages"}
+
+Received: {"status": "ok", "data": "{'player': {'username': 'Test', 'fullname': 'Test', 'id': 1}, 'is_online': 0}", "type": "player_status"}
+
+Stream send: {"action":"auth","login_by":"token","token":"b42106f6-e72d-434e-8548-10896880ccbb"}
+
+Received: {"status": "error", "code": 306, "message": "require_auth"}
+
+Signin: SocketMessage: TypeObject: Dooz.socket.models.LoggedUser
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+fullname: Behzad
+Received: {"status": "ok", "type": "user", "data": "{'id': 30, 'fullname': 'Behzad', 'username': 'TheSanardev', 'token': 'b42106f6-e72d-434e-8548-10896880ccbb'}"}
+
+Received: {"status": "ok", "type": "online_players", "data": "[]"}
+{"status": "ok", "type": "incoming_game_request", "data": "[]"}
+{"status": "ok", "type": "outgoing_game_request", "data": "[]"}
+{"status": "ok", "type": "resume_game", "data": "{'player_name': 'Test', 'game_id': 104}"}
+{"status": "ok", "type": "me", "data": "{'total_games': 44, 'wins': 18, 'fullname': 'Behzad', 'username': 'TheSanardev'}"}
+{"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 370, 'player_id': 30, 'message': 'Salam', 'timestamp': 1617150162, 'fullname': 'Behzad'}, {'id': 371, 'player_id': 30, 'message': 'من از این تعجب میکنم', 'timestamp': 1617150173, 'fullname': 'Behzad'}, {'id': 372, 'player_id': 30, 'message': 'که چطور اینجا مشکلی نداره', 'timestamp': 1617150176, 'fullname': 'Behzad'}, {'id': 373, 'player_id': 30, 'message': 'ولی اونجا مشکل داره', 'timestamp': 1617150179, 'fullname': 'Behzad'}, {'id': 374, 'player_id': 30, 'message': 'خیلی برام عجیبه', 'timestamp': 1617150182, 'fullname': 'Behzad'}, {'id': 375, 'player_id': 30, 'message': 'اصن یچیز مسخره ایه ', 'timestamp': 1617150191, 'fullname': 'Behzad'}, {'id': 376, 'player_id': 30, 'message': 'اعصابمو خورد میکنه', 'timestamp': 1617150194, 'fullname': 'Behzad'}, {'id': 377, 'player_id': 30, 'message': '.', 'timestamp': 1617203682, 'fullname': 'Behzad'}, {'id': 378, 'player_id': 1, 'message': 'به به', 'timestamp': 1617205542, 'fullname': 'Test'}, {'id': 379, 'player_id': 1, 'message': 'سلام العلیک', 'timestamp': 1617205546, 'fullname': 'Test'}], 'must_clear_history': 1}"}
+
+Stream send: {"action":"announcement_of_loss_game","game_id":104}
+
+Stream send: {"action":"get_global_messages","from_message_id":370}
+
+Received: {"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 360, 'player_id': 38, 'message': 'khoni?', 'timestamp': 1616943226, 'fullname': 'teste'}, {'id': 361, 'player_id': 38, 'message': '.', 'timestamp': 1616943760, 'fullname': 'teste'}, {'id': 362, 'player_id': 38, 'message': 'Salam', 'timestamp': 1616943764, 'fullname': 'teste'}, {'id': 363, 'player_id': 38, 'message': 'khoni?', 'timestamp': 1616943769, 'fullname': 'teste'}, {'id': 364, 'player_id': 38, 'message': 'khobi?', 'timestamp': 1616943771, 'fullname': 'teste'}, {'id': 365, 'player_id': 38, 'message': 'Salam', 'timestamp': 1616943785, 'fullname': 'teste'}, {'id': 366, 'player_id': 38, 'message': 'Ehem', 'timestamp': 1616943789, 'fullname': 'teste'}, {'id': 367, 'player_id': 1, 'message': ',..', 'timestamp': 1617123016, 'fullname': 'Test'}, {'id': 368, 'player_id': 30, 'message': 'Salam', 'timestamp': 1617126808, 'fullname': 'Behzad'}, {'id': 369, 'player_id': 30, 'message': 'Hal shoma chetore?', 'timestamp': 1617126812, 'fullname': 'Behzad'}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_global_messages","from_message_id":360}
+
+Received: {"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 350, 'player_id': 30, 'message': '.', 'timestamp': 1616927567, 'fullname': 'Behzad'}, {'id': 351, 'player_id': 30, 'message': 'Salam', 'timestamp': 1616927600, 'fullname': 'Behzad'}, {'id': 352, 'player_id': 30, 'message': 'khobi?', 'timestamp': 1616927602, 'fullname': 'Behzad'}, {'id': 353, 'player_id': 30, 'message': '.', 'timestamp': 1616927865, 'fullname': 'Behzad'}, {'id': 354, 'player_id': 30, 'message': '.', 'timestamp': 1616927915, 'fullname': 'Behzad'}, {'id': 355, 'player_id': 30, 'message': '.', 'timestamp': 1616927916, 'fullname': 'Behzad'}, {'id': 356, 'player_id': 30, 'message': 'salam', 'timestamp': 1616927956, 'fullname': 'Behzad'}, {'id': 357, 'player_id': 30, 'message': '.', 'timestamp': 1616928050, 'fullname': 'Behzad'}, {'id': 358, 'player_id': 1, 'message': '.', 'timestamp': 1616928599, 'fullname': 'Test'}, {'id': 359, 'player_id': 38, 'message': 'salam', 'timestamp': 1616943225, 'fullname': 'teste'}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_global_messages","from_message_id":350}
+
+Received: {"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 340, 'player_id': 30, 'message': '.', 'timestamp': 1616871206, 'fullname': 'Behzad'}, {'id': 341, 'player_id': 30, 'message': 'Salam', 'timestamp': 1616871207, 'fullname': 'Behzad'}, {'id': 342, 'player_id': 30, 'message': 'Hal shoma chetore?', 'timestamp': 1616871212, 'fullname': 'Behzad'}, {'id': 343, 'player_id': 30, 'message': '.', 'timestamp': 1616871214, 'fullname': 'Behzad'}, {'id': 344, 'player_id': 30, 'message': '.', 'timestamp': 1616871214, 'fullname': 'Behzad'}, {'id': 345, 'player_id': 30, 'message': '.', 'timestamp': 1616871215, 'fullname': 'Behzad'}, {'id': 346, 'player_id': 30, 'message': '.', 'timestamp': 1616871215, 'fullname': 'Behzad'}, {'id': 347, 'player_id': 30, 'message': '.', 'timestamp': 1616871225, 'fullname': 'Behzad'}, {'id': 348, 'player_id': 30, 'message': '.', 'timestamp': 1616927509, 'fullname': 'Behzad'}, {'id': 349, 'player_id': 30, 'message': '.', 'timestamp': 1616927554, 'fullname': 'Behzad'}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"auth","login_by":"token","token":"b42106f6-e72d-434e-8548-10896880ccbb"}
+
+Received: {"status": "error", "code": 306, "message": "require_auth"}
+
+Signin: SocketMessage: TypeObject: Dooz.socket.models.LoggedUser
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+fullname: Behzad
+Received: {"status": "ok", "type": "user", "data": "{'id': 30, 'fullname': 'Behzad', 'username': 'TheSanardev', 'token': 'b42106f6-e72d-434e-8548-10896880ccbb'}"}
+
+Received: {"status": "ok", "type": "online_players", "data": "[]"}
+
+Received: {"status": "ok", "type": "incoming_game_request", "data": "[]"}
+{"status": "ok", "type": "outgoing_game_request", "data": "[]"}
+
+Received: {"status": "ok", "type": "me", "data": "{'total_games': 44, 'wins': 18, 'fullname': 'Behzad', 'username': 'TheSanardev'}"}
+
+Received: {"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 370, 'player_id': 30, 'message': 'Salam', 'timestamp': 1617150162, 'fullname': 'Behzad'}, {'id': 371, 'player_id': 30, 'message': 'من از این تعجب میکنم', 'timestamp': 1617150173, 'fullname': 'Behzad'}, {'id': 372, 'player_id': 30, 'message': 'که چطور اینجا مشکلی نداره', 'timestamp': 1617150176, 'fullname': 'Behzad'}, {'id': 373, 'player_id': 30, 'message': 'ولی اونجا مشکل داره', 'timestamp': 1617150179, 'fullname': 'Behzad'}, {'id': 374, 'player_id': 30, 'message': 'خیلی برام عجیبه', 'timestamp': 1617150182, 'fullname': 'Behzad'}, {'id': 375, 'player_id': 30, 'message': 'اصن یچیز مسخره ایه ', 'timestamp': 1617150191, 'fullname': 'Behzad'}, {'id': 376, 'player_id': 30, 'message': 'اعصابمو خورد میکنه', 'timestamp': 1617150194, 'fullname': 'Behzad'}, {'id': 377, 'player_id': 30, 'message': '.', 'timestamp': 1617203682, 'fullname': 'Behzad'}, {'id': 378, 'player_id': 1, 'message': 'به به', 'timestamp': 1617205542, 'fullname': 'Test'}, {'id': 379, 'player_id': 1, 'message': 'سلام العلیک', 'timestamp': 1617205546, 'fullname': 'Test'}], 'must_clear_history': 1}"}
+
+Received: {"status": "ok", "type": "player_status", "data": "{'player': {'id': 1, 'fullname': 'Test', 'username': 'Test'}, 'is_online': 1}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":-1}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'HAHAHA', 'timestamp': 1617150792}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'دیگه ما اینیم', 'timestamp': 1617150797}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'چه میشه کرد', 'timestamp': 1617150799}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'دهنتو سرویس کردم نه؟', 'timestamp': 1617150810}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'دهنت آسفالت', 'timestamp': 1617150815}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'بریم یه دست دیگه؟', 'timestamp': 1617150819}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'بریم', 'timestamp': 1617150822}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617193357}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617193359}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617205559}]}"}
+
+Stream send: {"action":"add_message_in_private_chat","player_id":1,"message":"eho"}
+
+Received: {"status": "ok", "type": "new_private_chat_message", "data": "{'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'eho', 'timestamp': 1617210810}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":-1}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'دیگه ما اینیم', 'timestamp': 1617150797}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'چه میشه کرد', 'timestamp': 1617150799}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'دهنتو سرویس کردم نه؟', 'timestamp': 1617150810}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'دهنت آسفالت', 'timestamp': 1617150815}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'بریم یه دست دیگه؟', 'timestamp': 1617150819}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'بریم', 'timestamp': 1617150822}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617193357}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617193359}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617205559}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'eho', 'timestamp': 1617210810}]}"}
+
+Stream send: {"action":"auth","login_by":"token","token":"b42106f6-e72d-434e-8548-10896880ccbb"}
+
+Received: {"status": "error", "code": 306, "message": "require_auth"}
+
+Signin: SocketMessage: TypeObject: Dooz.socket.models.LoggedUser
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+fullname: Behzad
+Received: {"status": "ok", "type": "user", "data": "{'id': 30, 'fullname': 'Behzad', 'username': 'TheSanardev', 'token': 'b42106f6-e72d-434e-8548-10896880ccbb'}"}
+
+Received: {"status": "ok", "type": "online_players", "data": "[{'fullname': 'Test', 'username': 'Test', 'id': 1}]"}
+{"status": "ok", "type": "incoming_game_request", "data": "[]"}
+{"status": "ok", "type": "outgoing_game_request", "data": "[]"}
+{"status": "ok", "type": "me", "data": "{'total_games': 44, 'wins': 18, 'fullname': 'Behzad', 'username': 'TheSanardev'}"}
+{"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 370, 'player_id': 30, 'message': 'Salam', 'timestamp': 1617150162, 'fullname': 'Behzad'}, {'id': 371, 'player_id': 30, 'message': 'من از این تعجب میکنم', 'timestamp': 1617150173, 'fullname': 'Behzad'}, {'id': 372, 'player_id': 30, 'message': 'که چطور اینجا مشکلی نداره', 'timestamp': 1617150176, 'fullname': 'Behzad'}, {'id': 373, 'player_id': 30, 'message': 'ولی اونجا مشکل داره', 'timestamp': 1617150179, 'fullname': 'Behzad'}, {'id': 374, 'player_id': 30, 'message': 'خیلی برام عجیبه', 'timestamp': 1617150182, 'fullname': 'Behzad'}, {'id': 375, 'player_id': 30, 'message': 'اصن یچیز مسخره ایه ', 'timestamp': 1617150191, 'fullname': 'Behzad'}, {'id': 376, 'player_id': 30, 'message': 'اعصابمو خورد میکنه', 'timestamp': 1617150194, 'fullname': 'Behzad'}, {'id': 377, 'player_id': 30, 'message': '.', 'timestamp': 1617203682, 'fullname': 'Behzad'}, {'id': 378, 'player_id': 1, 'message': 'به به', 'timestamp': 1617205542, 'fullname': 'Test'}, {'id': 379, 'player_id': 1, 'message': 'سلام العلیک', 'timestamp': 1617205546, 'fullname': 'Test'}], 'must_clear_history': 1}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":-1}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'دیگه ما اینیم', 'timestamp': 1617150797}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'چه میشه کرد', 'timestamp': 1617150799}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'دهنتو سرویس کردم نه؟', 'timestamp': 1617150810}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'دهنت آسفالت', 'timestamp': 1617150815}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'بریم یه دست دیگه؟', 'timestamp': 1617150819}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'بریم', 'timestamp': 1617150822}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617193357}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617193359}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617205559}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'eho', 'timestamp': 1617210810}]}"}
+
+Stream send: {"action":"auth","login_by":"token","token":"b42106f6-e72d-434e-8548-10896880ccbb"}
+
+Received: {"status": "error", "code": 306, "message": "require_auth"}
+
+Signin: SocketMessage: TypeObject: Dooz.socket.models.LoggedUser
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+fullname: Behzad
+Received: {"status": "ok", "type": "user", "data": "{'id': 30, 'fullname': 'Behzad', 'username': 'TheSanardev', 'token': 'b42106f6-e72d-434e-8548-10896880ccbb'}"}
+
+Received: {"status": "ok", "type": "online_players", "data": "[{'fullname': 'Test', 'username': 'Test', 'id': 1}]"}
+{"status": "ok", "type": "incoming_game_request", "data": "[]"}
+
+Received: {"status": "ok", "type": "outgoing_game_request", "data": "[]"}
+
+Received: {"status": "ok", "type": "me", "data": "{'total_games': 44, 'wins': 18, 'fullname': 'Behzad', 'username': 'TheSanardev'}"}
+
+Received: {"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 370, 'player_id': 30, 'message': 'Salam', 'timestamp': 1617150162, 'fullname': 'Behzad'}, {'id': 371, 'player_id': 30, 'message': 'من از این تعجب میکنم', 'timestamp': 1617150173, 'fullname': 'Behzad'}, {'id': 372, 'player_id': 30, 'message': 'که چطور اینجا مشکلی نداره', 'timestamp': 1617150176, 'fullname': 'Behzad'}, {'id': 373, 'player_id': 30, 'message': 'ولی اونجا مشکل داره', 'timestamp': 1617150179, 'fullname': 'Behzad'}, {'id': 374, 'player_id': 30, 'message': 'خیلی برام عجیبه', 'timestamp': 1617150182, 'fullname': 'Behzad'}, {'id': 375, 'player_id': 30, 'message': 'اصن یچیز مسخره ایه ', 'timestamp': 1617150191, 'fullname': 'Behzad'}, {'id': 376, 'player_id': 30, 'message': 'اعصابمو خورد میکنه', 'timestamp': 1617150194, 'fullname': 'Behzad'}, {'id': 377, 'player_id': 30, 'message': '.', 'timestamp': 1617203682, 'fullname': 'Behzad'}, {'id': 378, 'player_id': 1, 'message': 'به به', 'timestamp': 1617205542, 'fullname': 'Test'}, {'id': 379, 'player_id': 1, 'message': 'سلام العلیک', 'timestamp': 1617205546, 'fullname': 'Test'}], 'must_clear_history': 1}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":-1}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'دیگه ما اینیم', 'timestamp': 1617150797}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'چه میشه کرد', 'timestamp': 1617150799}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'دهنتو سرویس کردم نه؟', 'timestamp': 1617150810}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'دهنت آسفالت', 'timestamp': 1617150815}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'بریم یه دست دیگه؟', 'timestamp': 1617150819}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'بریم', 'timestamp': 1617150822}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617193357}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617193359}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617205559}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'eho', 'timestamp': 1617210810}]}"}
+
+Socket exeption : Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'دیگه ما اینیم', 'timestamp': 1617150797}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'چه میشه کرد', 'timestamp': 1617150799}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'دهنتو سرویس کردم نه؟', 'timestamp': 1617150810}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'دهنت آسفالت', 'timestamp': 1617150815}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'بریم یه دست دیگه؟', 'timestamp': 1617150819}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'بریم', 'timestamp': 1617150822}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617193357}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617193359}, {'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617205559}, {'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'eho', 'timestamp': 1617210810}]}"}
+
+Stream Closed
+Stream send: {"action":"auth","login_by":"token","token":"b42106f6-e72d-434e-8548-10896880ccbb"}
+
+Received: {"status": "error", "code": 306, "message": "require_auth"}
+
+Signin: SocketMessage: TypeObject: Dooz.socket.models.LoggedUser
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+fullname: Behzad
+Received: {"status": "ok", "type": "user", "data": "{'id': 30, 'fullname': 'Behzad', 'username': 'TheSanardev', 'token': 'b42106f6-e72d-434e-8548-10896880ccbb'}"}
+
+Received: {"status": "ok", "type": "online_players", "data": "[{'fullname': 'Test', 'username': 'Test', 'id': 1}]"}
+{"status": "ok", "type": "incoming_game_request", "data": "[]"}
+{"status": "ok", "type": "outgoing_game_request", "data": "[]"}
+{"status": "ok", "type": "me", "data": "{'total_games': 44, 'wins': 18, 'fullname': 'Behzad', 'username': 'TheSanardev'}"}
+{"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 370, 'player_id': 30, 'message': 'Salam', 'timestamp': 1617150162, 'fullname': 'Behzad'}, {'id': 371, 'player_id': 30, 'message': 'من از این تعجب میکنم', 'timestamp': 1617150173, 'fullname': 'Behzad'}, {'id': 372, 'player_id': 30, 'message': 'که چطور اینجا مشکلی نداره', 'timestamp': 1617150176, 'fullname': 'Behzad'}, {'id': 373, 'player_id': 30, 'message': 'ولی اونجا مشکل داره', 'timestamp': 1617150179, 'fullname': 'Behzad'}, {'id': 374, 'player_id': 30, 'message': 'خیلی برام عجیبه', 'timestamp': 1617150182, 'fullname': 'Behzad'}, {'id': 375, 'player_id': 30, 'message': 'اصن یچیز مسخره ایه ', 'timestamp': 1617150191, 'fullname': 'Behzad'}, {'id': 376, 'player_id': 30, 'message': 'اعصابمو خورد میکنه', 'timestamp': 1617150194, 'fullname': 'Behzad'}, {'id': 377, 'player_id': 30, 'message': '.', 'timestamp': 1617203682, 'fullname': 'Behzad'}, {'id': 378, 'player_id': 1, 'message': 'به به', 'timestamp': 1617205542, 'fullname': 'Test'}, {'id': 379, 'player_id': 1, 'message': 'سلام العلیک', 'timestamp': 1617205546, 'fullname': 'Test'}], 'must_clear_history': 1}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":-1}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 88, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'دیگه ما اینیم', 'timestamp': 1617150797}, {'id': 89, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'چه میشه کرد', 'timestamp': 1617150799}, {'id': 90, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'دهنتو سرویس کردم نه؟', 'timestamp': 1617150810}, {'id': 91, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'دهنت آسفالت', 'timestamp': 1617150815}, {'id': 92, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'بریم یه دست دیگه؟', 'timestamp': 1617150819}, {'id': 93, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'بریم', 'timestamp': 1617150822}, {'id': 94, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617193357}, {'id': 95, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617193359}, {'id': 96, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617205559}, {'id': 97, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'eho', 'timestamp': 1617210810}], 'must_clear_history': 1}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":88}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 78, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Hehehe', 'timestamp': 1617127966}, {'id': 79, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Are', 'timestamp': 1617127967}, {'id': 80, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Brim game?', 'timestamp': 1617127969}, {'id': 81, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617150215}, {'id': 82, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617150217}, {'id': 83, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617150218}, {'id': 84, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'merc u khobi?', 'timestamp': 1617150223}, {'id': 85, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'dahanet', 'timestamp': 1617150782}, {'id': 86, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'service', 'timestamp': 1617150784}, {'id': 87, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'HAHAHA', 'timestamp': 1617150792}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":78}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 66, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Brim soragh game', 'timestamp': 1616928323}, {'id': 69, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Salammmm', 'timestamp': 1616943870}, {'id': 70, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'chetoriii', 'timestamp': 1616943872}, {'id': 71, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616964063}, {'id': 72, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617127782}, {'id': 73, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'chetori', 'timestamp': 1617127784}, {'id': 74, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1617127894}, {'id': 75, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617127897}, {'id': 76, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Salam', 'timestamp': 1617127899}, {'id': 77, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Vaght shoma be', 'timestamp': 1617127964}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":66}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 56, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874614}, {'id': 57, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616874617}, {'id': 58, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874680}, {'id': 59, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874682}, {'id': 60, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874916}, {'id': 61, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874917}, {'id': 62, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1616874919}, {'id': 63, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1616874921}, {'id': 64, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616928314}, {'id': 65, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Chetori tooo', 'timestamp': 1616928317}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":56}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 39, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'قربونت تو خوبی؟', 'timestamp': 1616661750}, {'id': 40, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'فدات', 'timestamp': 1616661755}, {'id': 41, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616703951}, {'id': 49, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874444}, {'id': 50, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874445}, {'id': 51, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'd', 'timestamp': 1616874533}, {'id': 52, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'd', 'timestamp': 1616874534}, {'id': 53, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874549}, {'id': 54, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874607}, {'id': 55, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874613}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":39}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 29, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': ',', 'timestamp': 1616611547}, {'id': 30, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616611967}, {'id': 31, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'ALm', 'timestamp': 1616621203}, {'id': 32, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616621205}, {'id': 33, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Hehe', 'timestamp': 1616622512}, {'id': 34, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'kheili bahale', 'timestamp': 1616622516}, {'id': 35, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Haji', 'timestamp': 1616661719}, {'id': 36, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Pashmam', 'timestamp': 1616661721}, {'id': 37, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'hello', 'timestamp': 1616661734}, {'id': 38, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'chetoriii', 'timestamp': 1616661741}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":29}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 18, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'سیدست یسشد یستشنید شسنتی دسشتنی سدشیت نشسدیستشنی دشستین شسدی شستین شسدیت شنسدی شستی ش', 'timestamp': 1616338746}, {'id': 19, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'یسش دیشستیدشستنی شسدیست شنید شستنیدشس تنی دشستی دشستی شسدت ینشس', 'timestamp': 1616338870}, {'id': 20, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'یشس یتسشنید شستنی دشست یشدست ینشسد یستشن یدشستین سش', 'timestamp': 1616338872}, {'id': 21, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'یدسشتین شسدیستشندیستشنیدشست یسشد یستشند یستی دسش', 'timestamp': 1616338874}, {'id': 22, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'یسشد یتشنسدی سشتی دسشتین شسدتین سشدیستید سشتنی', 'timestamp': 1616338877}, {'id': 23, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'یسشدیستشن دیسشنتید شستیدشستنیدشست ی', 'timestamp': 1616338879}, {'id': 24, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'یدسشتیسشدیتنسشیدشستیدسش', 'timestamp': 1616338881}, {'id': 25, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Ehem', 'timestamp': 1616340194}, {'id': 26, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'چیزی برای گفتن داری؟', 'timestamp': 1616340197}, {'id': 28, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'سلام', 'timestamp': 1616611522}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":18}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 8, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'ای ننه', 'timestamp': 1616338057}, {'id': 9, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'چه گیری کردیم', 'timestamp': 1616338064}, {'id': 10, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'به قرآن', 'timestamp': 1616338079}, {'id': 11, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616338708}, {'id': 12, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616338709}, {'id': 13, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616338709}, {'id': 14, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616338709}, {'id': 15, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616338710}, {'id': 16, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'اصلا یه وضعی', 'timestamp': 1616338714}, {'id': 17, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'نگم برات', 'timestamp': 1616338715}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":8}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 2, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'hello', 'timestamp': 1616326074}, {'id': 3, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'hello', 'timestamp': 1616326252}, {'id': 4, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616337594}, {'id': 5, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Test', 'timestamp': 1616337829}, {'id': 6, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Hello', 'timestamp': 1616337830}, {'id': 7, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'ای بابا', 'timestamp': 1616337940}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":2}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":-1}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 88, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'دیگه ما اینیم', 'timestamp': 1617150797}, {'id': 89, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'چه میشه کرد', 'timestamp': 1617150799}, {'id': 90, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'دهنتو سرویس کردم نه؟', 'timestamp': 1617150810}, {'id': 91, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'دهنت آسفالت', 'timestamp': 1617150815}, {'id': 92, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'بریم یه دست دیگه؟', 'timestamp': 1617150819}, {'id': 93, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'بریم', 'timestamp': 1617150822}, {'id': 94, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617193357}, {'id': 95, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617193359}, {'id': 96, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617205559}, {'id': 97, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'eho', 'timestamp': 1617210810}], 'must_clear_history': 1}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":88}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 78, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Hehehe', 'timestamp': 1617127966}, {'id': 79, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Are', 'timestamp': 1617127967}, {'id': 80, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Brim game?', 'timestamp': 1617127969}, {'id': 81, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617150215}, {'id': 82, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617150217}, {'id': 83, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617150218}, {'id': 84, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'merc u khobi?', 'timestamp': 1617150223}, {'id': 85, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'dahanet', 'timestamp': 1617150782}, {'id': 86, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'service', 'timestamp': 1617150784}, {'id': 87, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'HAHAHA', 'timestamp': 1617150792}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":78}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 66, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Brim soragh game', 'timestamp': 1616928323}, {'id': 69, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Salammmm', 'timestamp': 1616943870}, {'id': 70, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'chetoriii', 'timestamp': 1616943872}, {'id': 71, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616964063}, {'id': 72, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617127782}, {'id': 73, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'chetori', 'timestamp': 1617127784}, {'id': 74, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1617127894}, {'id': 75, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617127897}, {'id': 76, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Salam', 'timestamp': 1617127899}, {'id': 77, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Vaght shoma be', 'timestamp': 1617127964}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":66}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 56, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874614}, {'id': 57, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616874617}, {'id': 58, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874680}, {'id': 59, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874682}, {'id': 60, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874916}, {'id': 61, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874917}, {'id': 62, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1616874919}, {'id': 63, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1616874921}, {'id': 64, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616928314}, {'id': 65, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Chetori tooo', 'timestamp': 1616928317}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":56}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 39, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'قربونت تو خوبی؟', 'timestamp': 1616661750}, {'id': 40, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'فدات', 'timestamp': 1616661755}, {'id': 41, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616703951}, {'id': 49, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874444}, {'id': 50, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874445}, {'id': 51, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'd', 'timestamp': 1616874533}, {'id': 52, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'd', 'timestamp': 1616874534}, {'id': 53, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874549}, {'id': 54, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874607}, {'id': 55, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874613}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":39}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 29, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': ',', 'timestamp': 1616611547}, {'id': 30, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616611967}, {'id': 31, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'ALm', 'timestamp': 1616621203}, {'id': 32, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616621205}, {'id': 33, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Hehe', 'timestamp': 1616622512}, {'id': 34, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'kheili bahale', 'timestamp': 1616622516}, {'id': 35, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Haji', 'timestamp': 1616661719}, {'id': 36, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Pashmam', 'timestamp': 1616661721}, {'id': 37, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'hello', 'timestamp': 1616661734}, {'id': 38, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'chetoriii', 'timestamp': 1616661741}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":29}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 18, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'سیدست یسشد یستشنید شسنتی دسشتنی سدشیت نشسدیستشنی دشستین شسدی شستین شسدیت شنسدی شستی ش', 'timestamp': 1616338746}, {'id': 19, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'یسش دیشستیدشستنی شسدیست شنید شستنیدشس تنی دشستی دشستی شسدت ینشس', 'timestamp': 1616338870}, {'id': 20, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'یشس یتسشنید شستنی دشست یشدست ینشسد یستشن یدشستین سش', 'timestamp': 1616338872}, {'id': 21, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'یدسشتین شسدیستشندیستشنیدشست یسشد یستشند یستی دسش', 'timestamp': 1616338874}, {'id': 22, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'یسشد یتشنسدی سشتی دسشتین شسدتین سشدیستید سشتنی', 'timestamp': 1616338877}, {'id': 23, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'یسشدیستشن دیسشنتید شستیدشستنیدشست ی', 'timestamp': 1616338879}, {'id': 24, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'یدسشتیسشدیتنسشیدشستیدسش', 'timestamp': 1616338881}, {'id': 25, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Ehem', 'timestamp': 1616340194}, {'id': 26, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'چیزی برای گفتن داری؟', 'timestamp': 1616340197}, {'id': 28, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'سلام', 'timestamp': 1616611522}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":18}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 8, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'ای ننه', 'timestamp': 1616338057}, {'id': 9, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'چه گیری کردیم', 'timestamp': 1616338064}, {'id': 10, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'به قرآن', 'timestamp': 1616338079}, {'id': 11, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616338708}, {'id': 12, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616338709}, {'id': 13, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616338709}, {'id': 14, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616338709}, {'id': 15, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616338710}, {'id': 16, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'اصلا یه وضعی', 'timestamp': 1616338714}, {'id': 17, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'نگم برات', 'timestamp': 1616338715}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":8}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 2, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'hello', 'timestamp': 1616326074}, {'id': 3, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'hello', 'timestamp': 1616326252}, {'id': 4, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616337594}, {'id': 5, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Test', 'timestamp': 1616337829}, {'id': 6, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Hello', 'timestamp': 1616337830}, {'id': 7, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'ای بابا', 'timestamp': 1616337940}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":2}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [], 'must_clear_history': 0}"}
+
+Stream send: {"action":"auth","login_by":"token","token":"b42106f6-e72d-434e-8548-10896880ccbb"}
+
+Received: {"status": "error", "code": 306, "message": "require_auth"}
+
+Signin: SocketMessage: TypeObject: Dooz.socket.models.LoggedUser
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+fullname: Behzad
+Received: {"status": "ok", "type": "user", "data": "{'id': 30, 'fullname': 'Behzad', 'username': 'TheSanardev', 'token': 'b42106f6-e72d-434e-8548-10896880ccbb'}"}
+
+Received: {"status": "ok", "type": "online_players", "data": "[{'fullname': 'Test', 'username': 'Test', 'id': 1}]"}
+{"status": "ok", "type": "incoming_game_request", "data": "[]"}
+{"status": "ok", "type": "outgoing_game_request", "data": "[]"}
+{"status": "ok", "type": "me", "data": "{'total_games': 44, 'wins': 18, 'fullname': 'Behzad', 'username': 'TheSanardev'}"}
+{"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 370, 'player_id': 30, 'message': 'Salam', 'timestamp': 1617150162, 'fullname': 'Behzad'}, {'id': 371, 'player_id': 30, 'message': 'من از این تعجب میکنم', 'timestamp': 1617150173, 'fullname': 'Behzad'}, {'id': 372, 'player_id': 30, 'message': 'که چطور اینجا مشکلی نداره', 'timestamp': 1617150176, 'fullname': 'Behzad'}, {'id': 373, 'player_id': 30, 'message': 'ولی اونجا مشکل داره', 'timestamp': 1617150179, 'fullname': 'Behzad'}, {'id': 374, 'player_id': 30, 'message': 'خیلی برام عجیبه', 'timestamp': 1617150182, 'fullname': 'Behzad'}, {'id': 375, 'player_id': 30, 'message': 'اصن یچیز مسخره ایه ', 'timestamp': 1617150191, 'fullname': 'Behzad'}, {'id': 376, 'player_id': 30, 'message': 'اعصابمو خورد میکنه', 'timestamp': 1617150194, 'fullname': 'Behzad'}, {'id': 377, 'player_id': 30, 'message': '.', 'timestamp': 1617203682, 'fullname': 'Behzad'}, {'id': 378, 'player_id': 1, 'message': 'به به', 'timestamp': 1617205542, 'fullname': 'Test'}, {'id': 379, 'player_id': 1, 'message': 'سلام العلیک', 'timestamp': 1617205546, 'fullname': 'Test'}], 'must_clear_history': 1}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":-1}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 88, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'دیگه ما اینیم', 'timestamp': 1617150797}, {'id': 89, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'چه میشه کرد', 'timestamp': 1617150799}, {'id': 90, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'دهنتو سرویس کردم نه؟', 'timestamp': 1617150810}, {'id': 91, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'دهنت آسفالت', 'timestamp': 1617150815}, {'id': 92, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'بریم یه دست دیگه؟', 'timestamp': 1617150819}, {'id': 93, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'بریم', 'timestamp': 1617150822}, {'id': 94, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617193357}, {'id': 95, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617193359}, {'id': 96, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617205559}, {'id': 97, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'eho', 'timestamp': 1617210810}], 'must_clear_history': 1}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":88}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 78, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Hehehe', 'timestamp': 1617127966}, {'id': 79, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Are', 'timestamp': 1617127967}, {'id': 80, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Brim game?', 'timestamp': 1617127969}, {'id': 81, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617150215}, {'id': 82, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617150217}, {'id': 83, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617150218}, {'id': 84, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'merc u khobi?', 'timestamp': 1617150223}, {'id': 85, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'dahanet', 'timestamp': 1617150782}, {'id': 86, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'service', 'timestamp': 1617150784}, {'id': 87, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'HAHAHA', 'timestamp': 1617150792}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":78}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 66, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Brim soragh game', 'timestamp': 1616928323}, {'id': 69, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Salammmm', 'timestamp': 1616943870}, {'id': 70, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'chetoriii', 'timestamp': 1616943872}, {'id': 71, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616964063}, {'id': 72, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617127782}, {'id': 73, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'chetori', 'timestamp': 1617127784}, {'id': 74, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1617127894}, {'id': 75, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617127897}, {'id': 76, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Salam', 'timestamp': 1617127899}, {'id': 77, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Vaght shoma be', 'timestamp': 1617127964}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"auth","login_by":"token","token":"b42106f6-e72d-434e-8548-10896880ccbb"}
+
+Received: {"status": "error", "code": 306, "message": "require_auth"}
+
+Signin: SocketMessage: TypeObject: Dooz.socket.models.LoggedUser
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+fullname: Behzad
+Received: {"status": "ok", "type": "user", "data": "{'id': 30, 'fullname': 'Behzad', 'username': 'TheSanardev', 'token': 'b42106f6-e72d-434e-8548-10896880ccbb'}"}
+
+Received: {"status": "ok", "type": "online_players", "data": "[{'fullname': 'Test', 'username': 'Test', 'id': 1}]"}
+{"status": "ok", "type": "incoming_game_request", "data": "[]"}
+{"status": "ok", "type": "outgoing_game_request", "data": "[]"}
+{"status": "ok", "type": "me", "data": "{'total_games': 44, 'wins': 18, 'fullname': 'Behzad', 'username': 'TheSanardev'}"}
+{"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 370, 'player_id': 30, 'message': 'Salam', 'timestamp': 1617150162, 'fullname': 'Behzad'}, {'id': 371, 'player_id': 30, 'message': 'من از این تعجب میکنم', 'timestamp': 1617150173, 'fullname': 'Behzad'}, {'id': 372, 'player_id': 30, 'message': 'که چطور اینجا مشکلی نداره', 'timestamp': 1617150176, 'fullname': 'Behzad'}, {'id': 373, 'player_id': 30, 'message': 'ولی اونجا مشکل داره', 'timestamp': 1617150179, 'fullname': 'Behzad'}, {'id': 374, 'player_id': 30, 'message': 'خیلی برام عجیبه', 'timestamp': 1617150182, 'fullname': 'Behzad'}, {'id': 375, 'player_id': 30, 'message': 'اصن یچیز مسخره ایه ', 'timestamp': 1617150191, 'fullname': 'Behzad'}, {'id': 376, 'player_id': 30, 'message': 'اعصابمو خورد میکنه', 'timestamp': 1617150194, 'fullname': 'Behzad'}, {'id': 377, 'player_id': 30, 'message': '.', 'timestamp': 1617203682, 'fullname': 'Behzad'}, {'id': 378, 'player_id': 1, 'message': 'به به', 'timestamp': 1617205542, 'fullname': 'Test'}, {'id': 379, 'player_id': 1, 'message': 'سلام العلیک', 'timestamp': 1617205546, 'fullname': 'Test'}], 'must_clear_history': 1}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":-1}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 88, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'دیگه ما اینیم', 'timestamp': 1617150797}, {'id': 89, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'چه میشه کرد', 'timestamp': 1617150799}, {'id': 90, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'دهنتو سرویس کردم نه؟', 'timestamp': 1617150810}, {'id': 91, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'دهنت آسفالت', 'timestamp': 1617150815}, {'id': 92, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'بریم یه دست دیگه؟', 'timestamp': 1617150819}, {'id': 93, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'بریم', 'timestamp': 1617150822}, {'id': 94, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617193357}, {'id': 95, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617193359}, {'id': 96, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617205559}, {'id': 97, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'eho', 'timestamp': 1617210810}], 'must_clear_history': 1}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":88}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 78, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Hehehe', 'timestamp': 1617127966}, {'id': 79, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Are', 'timestamp': 1617127967}, {'id': 80, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Brim game?', 'timestamp': 1617127969}, {'id': 81, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617150215}, {'id': 82, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617150217}, {'id': 83, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617150218}, {'id': 84, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'merc u khobi?', 'timestamp': 1617150223}, {'id': 85, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'dahanet', 'timestamp': 1617150782}, {'id': 86, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'service', 'timestamp': 1617150784}, {'id': 87, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'HAHAHA', 'timestamp': 1617150792}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":78}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 66, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Brim soragh game', 'timestamp': 1616928323}, {'id': 69, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Salammmm', 'timestamp': 1616943870}, {'id': 70, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'chetoriii', 'timestamp': 1616943872}, {'id': 71, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616964063}, {'id': 72, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617127782}, {'id': 73, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'chetori', 'timestamp': 1617127784}, {'id': 74, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1617127894}, {'id': 75, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617127897}, {'id': 76, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Salam', 'timestamp': 1617127899}, {'id': 77, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Vaght shoma be', 'timestamp': 1617127964}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":66}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 56, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874614}, {'id': 57, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616874617}, {'id': 58, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874680}, {'id': 59, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874682}, {'id': 60, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874916}, {'id': 61, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874917}, {'id': 62, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1616874919}, {'id': 63, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1616874921}, {'id': 64, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616928314}, {'id': 65, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Chetori tooo', 'timestamp': 1616928317}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":56}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 39, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'قربونت تو خوبی؟', 'timestamp': 1616661750}, {'id': 40, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'فدات', 'timestamp': 1616661755}, {'id': 41, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616703951}, {'id': 49, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874444}, {'id': 50, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874445}, {'id': 51, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'd', 'timestamp': 1616874533}, {'id': 52, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'd', 'timestamp': 1616874534}, {'id': 53, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874549}, {'id': 54, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874607}, {'id': 55, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874613}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"auth","login_by":"token","token":"b42106f6-e72d-434e-8548-10896880ccbb"}
+
+Received: {"status": "error", "code": 306, "message": "require_auth"}
+
+Signin: SocketMessage: TypeObject: Dooz.socket.models.LoggedUser
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+fullname: Behzad
+Received: {"status": "ok", "type": "user", "data": "{'id': 30, 'fullname': 'Behzad', 'username': 'TheSanardev', 'token': 'b42106f6-e72d-434e-8548-10896880ccbb'}"}
+
+Received: {"status": "ok", "type": "online_players", "data": "[{'fullname': 'Test', 'username': 'Test', 'id': 1}]"}
+{"status": "ok", "type": "incoming_game_request", "data": "[]"}
+
+Received: {"status": "ok", "type": "outgoing_game_request", "data": "[]"}
+
+Received: {"status": "ok", "type": "me", "data": "{'total_games': 44, 'wins': 18, 'fullname': 'Behzad', 'username': 'TheSanardev'}"}
+
+Received: {"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 370, 'player_id': 30, 'message': 'Salam', 'timestamp': 1617150162, 'fullname': 'Behzad'}, {'id': 371, 'player_id': 30, 'message': 'من از این تعجب میکنم', 'timestamp': 1617150173, 'fullname': 'Behzad'}, {'id': 372, 'player_id': 30, 'message': 'که چطور اینجا مشکلی نداره', 'timestamp': 1617150176, 'fullname': 'Behzad'}, {'id': 373, 'player_id': 30, 'message': 'ولی اونجا مشکل داره', 'timestamp': 1617150179, 'fullname': 'Behzad'}, {'id': 374, 'player_id': 30, 'message': 'خیلی برام عجیبه', 'timestamp': 1617150182, 'fullname': 'Behzad'}, {'id': 375, 'player_id': 30, 'message': 'اصن یچیز مسخره ایه ', 'timestamp': 1617150191, 'fullname': 'Behzad'}, {'id': 376, 'player_id': 30, 'message': 'اعصابمو خورد میکنه', 'timestamp': 1617150194, 'fullname': 'Behzad'}, {'id': 377, 'player_id': 30, 'message': '.', 'timestamp': 1617203682, 'fullname': 'Behzad'}, {'id': 378, 'player_id': 1, 'message': 'به به', 'timestamp': 1617205542, 'fullname': 'Test'}, {'id': 379, 'player_id': 1, 'message': 'سلام العلیک', 'timestamp': 1617205546, 'fullname': 'Test'}], 'must_clear_history': 1}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":-1}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 88, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'دیگه ما اینیم', 'timestamp': 1617150797}, {'id': 89, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'چه میشه کرد', 'timestamp': 1617150799}, {'id': 90, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'دهنتو سرویس کردم نه؟', 'timestamp': 1617150810}, {'id': 91, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'دهنت آسفالت', 'timestamp': 1617150815}, {'id': 92, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'بریم یه دست دیگه؟', 'timestamp': 1617150819}, {'id': 93, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'بریم', 'timestamp': 1617150822}, {'id': 94, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617193357}, {'id': 95, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617193359}, {'id': 96, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617205559}, {'id': 97, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'eho', 'timestamp': 1617210810}], 'must_clear_history': 1}"}
+
+Received: {"status": "ok", "type": "player_status", "data": "{'player': {'id': 1, 'fullname': 'Test', 'username': 'Test'}, 'is_online': 1}"}
+
+Received: {"status": "ok", "type": "incoming_game_request", "data": "[{'fullname': 'Test', 'username': 'Test', 'id': 105, 'player_id': 1, 'timestamp': 1617212390}]"}
+
+Stream send: {"action":"accept_game_request","game_id":105}
+
+Stream send: {"action":"get_game_data","game_id":105}
+
+Received: {"status": "ok", "type": "start_game", "data": "{'game_id': 105}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":-1}
+
+Received: {"status": "ok", "type": "game_data", "data": "{'game_id': 105, 'turn': 'Test', 'player_one': {'id': 1, 'name': 'Test', 'score': 0}, 'player_two': {'id': 30, 'name': 'TheSanardev', 'score': 0}, 'data': [['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', ''], ['', '', '', '', '', '', '', '']]}"}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 88, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'دیگه ما اینیم', 'timestamp': 1617150797}, {'id': 89, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'چه میشه کرد', 'timestamp': 1617150799}, {'id': 90, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'دهنتو سرویس کردم نه؟', 'timestamp': 1617150810}, {'id': 91, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'دهنت آسفالت', 'timestamp': 1617150815}, {'id': 92, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'بریم یه دست دیگه؟', 'timestamp': 1617150819}, {'id': 93, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'بریم', 'timestamp': 1617150822}, {'id': 94, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617193357}, {'id': 95, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617193359}, {'id': 96, 'sender_pla0yer_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617205559}, {'id': 97, 'sender_pla0yer_id': 30, 'receiver_player_id': 1, 'message': 'eho', 'timestamp': 1617210810}], 'must_clear_history': 1}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":88}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 78, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Hehehe', 'timestamp': 1617127966}, {'id': 79, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Are', 'timestamp': 1617127967}, {'id': 80, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Brim game?', 'timestamp': 1617127969}, {'id': 81, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617150215}, {'id': 82, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617150217}, {'id': 83, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1617150218}, {'id': 84, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'merc u khobi?', 'timestamp': 1617150223}, {'id': 85, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'dahanet', 'timestamp': 1617150782}, {'id': 86, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'service', 'timestamp': 1617150784}, {'id': 87, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'HAHAHA', 'timestamp': 1617150792}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":78}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 66, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Brim soragh game', 'timestamp': 1616928323}, {'id': 69, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Salammmm', 'timestamp': 1616943870}, {'id': 70, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'chetoriii', 'timestamp': 1616943872}, {'id': 71, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616964063}, {'id': 72, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1617127782}, {'id': 73, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'chetori', 'timestamp': 1617127784}, {'id': 74, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1617127894}, {'id': 75, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1617127897}, {'id': 76, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Salam', 'timestamp': 1617127899}, {'id': 77, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'Vaght shoma be', 'timestamp': 1617127964}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_private_chat_messages","player_id":1,"from_message_id":66}
+
+Received: {"status": "ok", "type": "private_chat_messages", "data": "{'chat_with': 1, 'messages': [{'id': 56, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874614}, {'id': 57, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616874617}, {'id': 58, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874680}, {'id': 59, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': '.', 'timestamp': 1616874682}, {'id': 60, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874916}, {'id': 61, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': '.', 'timestamp': 1616874917}, {'id': 62, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'salam', 'timestamp': 1616874919}, {'id': 63, 'sender_player_id': 1, 'receiver_player_id': 30, 'message': 'khobi?', 'timestamp': 1616874921}, {'id': 64, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Salam', 'timestamp': 1616928314}, {'id': 65, 'sender_player_id': 30, 'receiver_player_id': 1, 'message': 'Chetori tooo', 'timestamp': 1616928317}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"auth","login_by":"token","token":"b42106f6-e72d-434e-8548-10896880ccbb"}
+
+Received: {"status": "error", "code": 306, "message": "require_auth"}
+
+Signin: SocketMessage: TypeObject: Dooz.socket.models.LoggedUser
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+fullname: Behzad
+Received: {"status": "ok", "type": "user", "data": "{'id': 30, 'fullname': 'Behzad', 'username': 'TheSanardev', 'token': 'b42106f6-e72d-434e-8548-10896880ccbb'}"}
+
+Received: {"status": "ok", "type": "online_players", "data": "[{'fullname': 'Test', 'username': 'Test', 'id': 1}]"}
+{"status": "ok", "type": "incoming_game_request", "data": "[]"}
+{"status": "ok", "type": "outgoing_game_request", "data": "[]"}
+{"status": "ok", "type": "resume_game", "data": "{'player_name': 'Test', 'game_id': 105}"}
+{"status": "ok", "type": "me", "data": "{'total_games': 45, 'wins': 18, 'fullname': 'Behzad', 'username': 'TheSanardev'}"}
+{"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 370, 'player_id': 30, 'message': 'Salam', 'timestamp': 1617150162, 'fullname': 'Behzad'}, {'id': 371, 'player_id': 30, 'message': 'من از این تعجب میکنم', 'timestamp': 1617150173, 'fullname': 'Behzad'}, {'id': 372, 'player_id': 30, 'message': 'که چطور اینجا مشکلی نداره', 'timestamp': 1617150176, 'fullname': 'Behzad'}, {'id': 373, 'player_id': 30, 'message': 'ولی اونجا مشکل داره', 'timestamp': 1617150179, 'fullname': 'Behzad'}, {'id': 374, 'player_id': 30, 'message': 'خیلی برام عجیبه', 'timestamp': 1617150182, 'fullname': 'Behzad'}, {'id': 375, 'player_id': 30, 'message': 'اصن یچیز مسخره ایه ', 'timestamp': 1617150191, 'fullname': 'Behzad'}, {'id': 376, 'player_id': 30, 'message': 'اعصابمو خورد میکنه', 'timestamp': 1617150194, 'fullname': 'Behzad'}, {'id': 377, 'player_id': 30, 'message': '.', 'timestamp': 1617203682, 'fullname': 'Behzad'}, {'id': 378, 'player_id': 1, 'message': 'به به', 'timestamp': 1617205542, 'fullname': 'Test'}, {'id': 379, 'player_id': 1, 'message': 'سلام العلیک', 'timestamp': 1617205546, 'fullname': 'Test'}], 'must_clear_history': 1}"}
+
+Stream send: {"action":"announcement_of_loss_game","game_id":105}
+
+Stream send: {"action":"get_global_messages","from_message_id":370}
+
+Received: {"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 360, 'player_id': 38, 'message': 'khoni?', 'timestamp': 1616943226, 'fullname': 'teste'}, {'id': 361, 'player_id': 38, 'message': '.', 'timestamp': 1616943760, 'fullname': 'teste'}, {'id': 362, 'player_id': 38, 'message': 'Salam', 'timestamp': 1616943764, 'fullname': 'teste'}, {'id': 363, 'player_id': 38, 'message': 'khoni?', 'timestamp': 1616943769, 'fullname': 'teste'}, {'id': 364, 'player_id': 38, 'message': 'khobi?', 'timestamp': 1616943771, 'fullname': 'teste'}, {'id': 365, 'player_id': 38, 'message': 'Salam', 'timestamp': 1616943785, 'fullname': 'teste'}, {'id': 366, 'player_id': 38, 'message': 'Ehem', 'timestamp': 1616943789, 'fullname': 'teste'}, {'id': 367, 'player_id': 1, 'message': ',..', 'timestamp': 1617123016, 'fullname': 'Test'}, {'id': 368, 'player_id': 30, 'message': 'Salam', 'timestamp': 1617126808, 'fullname': 'Behzad'}, {'id': 369, 'player_id': 30, 'message': 'Hal shoma chetore?', 'timestamp': 1617126812, 'fullname': 'Behzad'}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"get_global_messages","from_message_id":360}
+
+Received: {"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 350, 'player_id': 30, 'message': '.', 'timestamp': 1616927567, 'fullname': 'Behzad'}, {'id': 351, 'player_id': 30, 'message': 'Salam', 'timestamp': 1616927600, 'fullname': 'Behzad'}, {'id': 352, 'player_id': 30, 'message': 'khobi?', 'timestamp': 1616927602, 'fullname': 'Behzad'}, {'id': 353, 'player_id': 30, 'message': '.', 'timestamp': 1616927865, 'fullname': 'Behzad'}, {'id': 354, 'player_id': 30, 'message': '.', 'timestamp': 1616927915, 'fullname': 'Behzad'}, {'id': 355, 'player_id': 30, 'message': '.', 'timestamp': 1616927916, 'fullname': 'Behzad'}, {'id': 356, 'player_id': 30, 'message': 'salam', 'timestamp': 1616927956, 'fullname': 'Behzad'}, {'id': 357, 'player_id': 30, 'message': '.', 'timestamp': 1616928050, 'fullname': 'Behzad'}, {'id': 358, 'player_id': 1, 'message': '.', 'timestamp': 1616928599, 'fullname': 'Test'}, {'id': 359, 'player_id': 38, 'message': 'salam', 'timestamp': 1616943225, 'fullname': 'teste'}], 'must_clear_history': 0}"}
+
+Stream send: {"action":"auth","login_by":"token","token":"b42106f6-e72d-434e-8548-10896880ccbb"}
+
+Received: {"status": "error", "code": 306, "message": "require_auth"}
+
+Signin: SocketMessage: TypeObject: Dooz.socket.models.LoggedUser
+Stream send: {"action":"get_online_players"}
+
+Stream send: {"action":"get_game_requests"}
+
+Stream send: {"action":"get_running_game"}
+
+Stream send: {"action":"get_me"}
+
+Stream send: {"action":"get_global_messages","from_message_id":-1}
+
+fullname: Behzad
+Received: {"status": "ok", "type": "user", "data": "{'id': 30, 'fullname': 'Behzad', 'username': 'TheSanardev', 'token': 'b42106f6-e72d-434e-8548-10896880ccbb'}"}
+
+Received: {"status": "ok", "type": "online_players", "data": "[{'fullname': 'Test', 'username': 'Test', 'id': 1}]"}
+{"status": "ok", "type": "incoming_game_request", "data": "[]"}
+{"status": "ok", "type": "outgoing_game_request", "data": "[]"}
+{"status": "ok", "type": "me", "data": "{'total_games': 45, 'wins': 18, 'fullname': 'Behzad', 'username': 'TheSanardev'}"}
+{"status": "ok", "type": "global_messages", "data": "{'messages': [{'id': 370, 'player_id': 30, 'message': 'Salam', 'timestamp': 1617150162, 'fullname': 'Behzad'}, {'id': 371, 'player_id': 30, 'message': 'من از این تعجب میکنم', 'timestamp': 1617150173, 'fullname': 'Behzad'}, {'id': 372, 'player_id': 30, 'message': 'که چطور اینجا مشکلی نداره', 'timestamp': 1617150176, 'fullname': 'Behzad'}, {'id': 373, 'player_id': 30, 'message': 'ولی اونجا مشکل داره', 'timestamp': 1617150179, 'fullname': 'Behzad'}, {'id': 374, 'player_id': 30, 'message': 'خیلی برام عجیبه', 'timestamp': 1617150182, 'fullname': 'Behzad'}, {'id': 375, 'player_id': 30, 'message': 'اصن یچیز مسخره ایه ', 'timestamp': 1617150191, 'fullname': 'Behzad'}, {'id': 376, 'player_id': 30, 'message': 'اعصابمو خورد میکنه', 'timestamp': 1617150194, 'fullname': 'Behzad'}, {'id': 377, 'player_id': 30, 'message': '.', 'timestamp': 1617203682, 'fullname': 'Behzad'}, {'id': 378, 'player_id': 1, 'message': 'به به', 'timestamp': 1617205542, 'fullname': 'Test'}, {'id': 379, 'player_id': 1, 'message': 'سلام العلیک', 'timestamp': 1617205546, 'fullname': 'Test'}], 'must_clear_history': 1}"}
+
